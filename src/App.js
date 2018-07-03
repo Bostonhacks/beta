@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { Header } from "./components/Header/Header";
+import { TracksAndWorkshops } from "./components/TracksAndWorkshops/TracksAndWorkshops";
 
 class App extends Component {
   render() {
@@ -63,7 +64,7 @@ class App extends Component {
                 backgroundProp="#3dbecd"
               />
             </h2>
-            <p>Tracks and workshop stuff here!</p>
+            <TracksAndWorkshops />
           </div>
 
           <div>
