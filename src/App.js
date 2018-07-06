@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Flex, Box } from "grid-styled";
 import { AttendBox, SponsorBox } from "./components";
 import { Header } from "./components/Header/Header";
 
@@ -25,19 +26,20 @@ class App extends Component {
               />
             </h2>
           </div>
-          <div>
-            <AttendBox />
-            <SponsorBox />
-          </div>
+          <Flex>
+            <Box width={1 / 3} />
+            <Box width={1 / 3}>
+              <AttendBox />
+            </Box>
+            <Box width={1 / 3}>
+              <SponsorBox />
+            </Box>
+          </Flex>
         </div>
 
         <div>
           <h2>
-            <Header
-              contentProp="Event Schedule"
-              colorProp="#EF833F"
-              backgroundProp="#FFFFFF"
-            />
+            <Header contentProp="Event Schedule" colorProp="#EF833F" />
           </h2>
           <p>Schedule stuff here!</p>
         </div>
@@ -58,7 +60,6 @@ class App extends Component {
             <Header
               contentProp="Frequently Asked Questions"
               colorProp="#3CBFCE"
-              backgroundProp="#FFFFFF"
             />
           </h2>
           <p>FAQ stuff here!</p>
