@@ -26,12 +26,12 @@ class App extends Component {
               />
             </h2>
           </div>
-          <Flex>
-            <Box width={1 / 3} />
-            <Box width={1 / 3}>
+          <Flex flexWrap={"wrap"}>
+            <Box width={[0, 0, 1 / 3]} />
+            <Box width={[1, 1 / 2, 1 / 3]}>
               <AttendBox />
             </Box>
-            <Box width={1 / 3}>
+            <Box width={[1, 1 / 2, 1 / 3]}>
               <SponsorBox />
             </Box>
           </Flex>
