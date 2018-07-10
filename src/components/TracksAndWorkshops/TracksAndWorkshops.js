@@ -1,38 +1,19 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-
-import grid1 from "./assets/Sq grid pink 1.jpg";
-import circle1 from "./assets/thin circle pink 2.png";
-import triangle1 from "./assets/orange triangle 1.jpg";
-import wave2 from "./assets/Wave 2.jpg";
-
-// import PropTypes from "prop-types";
-// import Header from "./../Header";
-
-// import { Row, Col } from "react-simple-flex-grid";
-// import "react-simple-flex-grid/lib/main.css";
-
 import { Grid, Row, Col } from "react-flexbox-grid";
 
-// const Content = styled.div`
-//     border: 1px solid #000;
-//     background-image: url(${img});
-//     width: 2000px;
-//     height: 2000px;
-// `;
-
-// const Div = styled.div`
-//   height: 100%;
-//   width: 100%;
-//   font-family: .SFNSDisplay;
-// `;
-
-// background-image: ${Wave2};
+import grid1 from "./assets/Sq grid pink 1.png";
+import circle1 from "./assets/thin circle pink 2.png";
+import triangle1 from "./assets/orange triangle 1.png";
+import wave2 from "./assets/Wave 2.jpg";
 
 const Taw = styled.div`
   height: 100%;
   width: 100%;
   font-family: .SFNSDisplay;
+  color: #ffffff;
+  background-image: url(${wave2});
+  background-color: rgba(82, 190, 205, 1);
 `;
 
 const centeredImg = {
@@ -43,25 +24,11 @@ const centeredImg = {
   height: ".."
 };
 
-// import Background from '../images/background_image.png';
-
-var sectionStyle = {
-  width: "100%",
-  height: "100%",
-  backgroundImage: "url(" + wave2 + ")"
-};
-
-// let imgUrl = "/Wave 2.jpg";
-// let styleWave = {
-//   background: "url(" + imgUrl + ") noRepeat center center fixed",
-//   backgroundSize: "cover"
-// };
-
 export class TracksAndWorkshops extends Component {
   render() {
     return (
       <Taw>
-        <div style={sectionStyle}>
+        <div>
           <Grid fluid>
             <Row>
               <Col className="hidden-xs" sm={6}>
