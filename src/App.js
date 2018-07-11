@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Flex, Box } from "grid-styled";
-import { AttendBox, SponsorBox } from "./components";
+import { AttendBox, SponsorBox, EventSchedule, FAQSection } from "./components";
 import { Header } from "./components/Header/Header";
 
 class App extends Component {
@@ -41,7 +41,7 @@ class App extends Component {
           <h2>
             <Header contentProp="Event Schedule" colorProp="#EF833F" />
           </h2>
-          <p>Schedule stuff here!</p>
+          <EventSchedule />
         </div>
 
         <div>
@@ -62,7 +62,7 @@ class App extends Component {
               colorProp="#3CBFCE"
             />
           </h2>
-          <p>FAQ stuff here!</p>
+          <FAQSection />
         </div>
 
         <div>
