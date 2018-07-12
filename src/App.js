@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { AttendBox, SponsorBox } from "./components";
+import { AttendBox, SponsorBox, EventSchedule, FAQSection } from "./components";
 import { Header } from "./components/Header/Header";
 import { TracksAndWorkshops } from "./components/TracksAndWorkshops/TracksAndWorkshops";
 
@@ -40,7 +40,7 @@ class App extends Component {
               backgroundProp="#FFFFFF"
             />
           </h2>
-          <p>Schedule stuff here!</p>
+          <EventSchedule />
         </div>
 
         <div>
@@ -63,7 +63,7 @@ class App extends Component {
               backgroundProp="#FFFFFF"
             />
           </h2>
-          <p>FAQ stuff here!</p>
+          <FAQSection />
         </div>
 
         <div>
