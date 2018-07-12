@@ -11,9 +11,10 @@ const Taw = styled.div`
   height: 100%;
   width: 100%;
   font-family: .SFNSDisplay;
-  color: #ffffff;
-  background-image: url(${wave2});
-  background-color: rgba(82, 190, 205, 1);
+  color: #222222;
+  background-height: auto;
+  background-size: cover;
+  background-image: url("${wave2}");
 `;
 
 const centeredImg = {
@@ -29,6 +30,12 @@ export class TracksAndWorkshops extends Component {
     return (
       <Taw>
         <div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
           <Grid fluid>
             <Row>
               <Col className="hidden-xs" sm={6}>
@@ -96,6 +103,12 @@ export class TracksAndWorkshops extends Component {
               </Col>
             </Row>
           </Grid>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
         </div>
       </Taw>
     );
