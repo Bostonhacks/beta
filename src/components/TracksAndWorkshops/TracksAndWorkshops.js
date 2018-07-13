@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Grid, Row, Col } from "react-flexbox-grid";
 
 import grid1 from "./assets/Sq grid pink 1.png";
+import grid2 from "./assets/Dot Grid orng 2.png";
 import circle1 from "./assets/thin circle pink 2.png";
 import triangle1 from "./assets/orange triangle 1.png";
 import wave2 from "./assets/Wave 2.jpg";
@@ -14,7 +15,8 @@ const Taw = styled.div`
   color: #222222;
   background-height: auto;
   background-size: cover;
-  background-image: url("${wave2}");
+  background-color: rgb(61, 190, 205);
+  // background-image: url("${wave2}");
 `;
 
 const centeredImg = {
@@ -30,10 +32,6 @@ export class TracksAndWorkshops extends Component {
     return (
       <Taw>
         <div>
-          <br />
-          <br />
-          <br />
-          <br />
           <br />
           <br />
           <Grid fluid>
@@ -101,12 +99,13 @@ export class TracksAndWorkshops extends Component {
                   <img src={triangle1} />
                 </div>
               </Col>
+              <Col className="hidden-xs" xsOffset={6} xs={3}>
+                <div style={centeredImg}>
+                  <img src={grid2} />
+                </div>
+              </Col>
             </Row>
           </Grid>
-          <br />
-          <br />
-          <br />
-          <br />
           <br />
           <br />
         </div>

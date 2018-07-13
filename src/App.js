@@ -44,14 +44,6 @@ class App extends Component {
         </div>
 
         <div>
-          <h2>
-            <Header
-              contentProp="Tracks and Workshops"
-              colorProp="#B7D98B"
-              backgroundProp="#3dbecd"
-            />
-          </h2>
-          <p>Tracks and workshop stuff here!</p>
           <TracksAndWorkshops />
         </div>
 
