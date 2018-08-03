@@ -47,14 +47,10 @@ class EventSchedule extends Component {
       <React.Fragment>
         <Grid fluid style={{ padding: "0" }}>
           <Row>
-            <Col
-              className="hidden-md hidden-sm hidden-xs"
-              lg={1}
-              style={{ display: "flex" }}
-            >
-              <img src={circleGreen} />
+            <Col xs={1} style={{ display: "flex" }}>
+              <img src={circleGreen} className="icons2" />
             </Col>
-            <Col md={11} lg={9}>
+            <Col xs={10} lg={9}>
               <EventScheduleTitle> Event Schedule </EventScheduleTitle>
               <Row>
                 <Col md={12} lg={6}>
@@ -65,9 +61,9 @@ class EventSchedule extends Component {
                 </Col>
               </Row>
             </Col>
-            <Col className="hidden-sm hidden-xs" md={1} lg={2}>
-              <img src={zigzag} align="right" />
-              <GreenGrid src={gridBlue} />
+            <Col xs={1} lg={2}>
+              <img src={zigzag} align="right" className="icons1" />
+              <GreenGrid src={gridBlue} className="icons1" />
             </Col>
           </Row>
         </Grid>

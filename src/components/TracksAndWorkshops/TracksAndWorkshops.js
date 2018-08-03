@@ -80,7 +80,7 @@ export class TracksAndWorkshops extends Component {
           <Row1>
             <Row className="TracksTitle">
               <Col md={12} lg={7} align="center">
-                <img src={gridBlue} />
+                <img src={gridBlue} className="icons1" />
               </Col>
               <Col md={12} lg={5}>
                 <TracksTitle> Tracks and Workshops </TracksTitle>
@@ -101,7 +101,7 @@ export class TracksAndWorkshops extends Component {
                 <LastYear> Last year&apos;s tracks: </LastYear>
               </Col>
               <Col md={6} lg={3} align="center">
-                <img src={circleBlue} />
+                <img src={circleBlue} className="icons1" />
               </Col>
             </Row>
             <Row>
@@ -120,7 +120,7 @@ export class TracksAndWorkshops extends Component {
                   and moved on to more advanced topics.
                 </TracksCopy>
               </Col>
-              <Col sm={10} lg={3}>
+              <Col xs={10} lg={3}>
                 <TrackName> Virtual Reality </TrackName>
                 <TracksCopy>
                   Led by <b> BU AR/VR </b>, hackers got a jumpstart into
@@ -131,7 +131,7 @@ export class TracksAndWorkshops extends Component {
             </Row>
           </Row2>
           <Row3>
-            <img src={triangOrange} />
+            <img src={triangOrange} className="icons1" />
           </Row3>
         </Grid>
       </div>

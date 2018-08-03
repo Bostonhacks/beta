@@ -149,3 +149,15 @@ input {
     text-align: right;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .icons1 {
+    width: 40px;
+    height: auto;
+  }
+
+  .icons2 {
+    height: 40px;
+    width: auto;
+  }
+}
