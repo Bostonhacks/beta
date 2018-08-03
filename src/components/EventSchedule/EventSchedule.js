@@ -37,8 +37,16 @@ const EventScheduleTitle = styled.h2`
   }
 `;
 
-const GreenGrid = styled.img`
-  margin-top: 100%;
+const CircleGreen = styled.img`
+  position: relative;
+  top: 50%;
+`;
+
+const GreenGrid = CircleGreen.extend`
+  @media (max-width: 990px) {
+    float: right;
+  }
+  z-index: -1;
 `;
 
 class EventSchedule extends Component {
@@ -47,8 +55,8 @@ class EventSchedule extends Component {
       <React.Fragment>
         <Grid fluid style={{ padding: "0" }}>
           <Row>
-            <Col xs={1} style={{ display: "flex" }}>
-              <img src={circleGreen} className="icons2" />
+            <Col xs={1}>
+              <CircleGreen src={circleGreen} className="icons2" />
             </Col>
             <Col xs={10} lg={9}>
               <EventScheduleTitle> Event Schedule </EventScheduleTitle>
