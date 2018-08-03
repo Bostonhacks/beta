@@ -14,7 +14,9 @@ const Table = styled.table`
   tr:last-child td {
     padding-bottom: 0px;
   }
-  margin: 0 auto;
+  @media (max-width: 1000px) {
+    margin: 0 auto;
+  }
 `;
 
 const Title = styled.th`

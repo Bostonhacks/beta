@@ -5,7 +5,6 @@ import styled from "styled-components";
 const TimeCell = styled.td`
   padding-right: 10px;
   text-align: right;
-  text-transform: uppercase;
 
   font-family: "Roboto", sans-serif;
   font-size: 28px;
@@ -18,7 +17,6 @@ const TimeCell = styled.td`
 
 const EventCell = styled.td`
   padding-left: 7%;
-  text-transform: uppercase;
   white-space: nowrap;
   font-family: "Roboto Slab", serif;
   font-size: 24px;

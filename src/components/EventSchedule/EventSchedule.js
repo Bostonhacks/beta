@@ -8,21 +8,21 @@ import circleGreen from "./../../assets/Circles/Half_Circle_Green.svg";
 import zigzag from "./../../assets/ZigZags/Line_Green2.svg";
 
 const eventsSat = [
-  { time: "9:30 AM", name: "registration" },
-  { time: "11:30 AM", name: "opening ceremony" },
-  { time: "12:00 PM", name: "lunch" },
-  { time: "1:00 PM", name: "team formation" },
-  { time: "1:30 PM", name: "hacking begins" },
-  { time: "6:30 PM", name: "dinner" },
-  { time: "12:00 AM", name: "midnight snack" }
+  { time: "9:30 AM", name: "Registration" },
+  { time: "11:30 AM", name: "Opening Ceremony" },
+  { time: "12:00 PM", name: "Lunch" },
+  { time: "1:00 PM", name: "Team formation" },
+  { time: "1:30 PM", name: "Hacking begins" },
+  { time: "6:30 PM", name: "Dinner" },
+  { time: "12:00 AM", name: "Midnight snack" }
 ];
 
 const eventsSun = [
-  { time: "7:00 AM", name: "breakfast" },
-  { time: "11:00 AM", name: "submissions due" },
-  { time: "11:00 PM", name: "lunch" },
-  { time: "12:00 PM", name: "judging expo" },
-  { time: "2:00 PM", name: "closing ceremony" }
+  { time: "7:00 AM", name: "Breakfast" },
+  { time: "11:00 AM", name: "Submissions due" },
+  { time: "11:00 PM", name: "Lunch" },
+  { time: "12:00 PM", name: "Judging expo" },
+  { time: "2:00 PM", name: "Closing ceremony" }
 ];
 
 const EventScheduleTitle = styled.h2`
@@ -31,7 +31,7 @@ const EventScheduleTitle = styled.h2`
   font-size: 33px;
   font-weight: 500;
   position: relative;
-  margin-left: 17%;
+  margin-left: 13%;
   @media (max-width: 500px) {
     font-size: 17px;
   }

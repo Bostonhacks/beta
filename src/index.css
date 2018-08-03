@@ -100,6 +100,7 @@ input {
   font-size: 2vw;
 }
 
+/*
 .TracksAndWorkshops {
   background:
       url("assets/Waves/Mid_Curve1.svg") right no-repeat,
@@ -142,6 +143,46 @@ input {
     min-height: 102vw;
   }
 }
+*/
+
+.TracksAndWorkshops {
+  position: relative;
+  display: flex;
+}
+
+.background-div1 {
+  background: url("assets/Waves/MidCurve.svg") no-repeat;
+  background-size: cover;
+
+  position: absolute;
+  height: 40vw;
+  width: 100%;
+  z-index: -1;
+}
+
+.background-div2 {
+  background-color: #292563;
+  
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 88vw);
+  z-index: -1;
+
+  margin-top: 39vw;
+}
+
+.background-div3 {
+  background: url("assets/Waves/MidCurve.svg") right bottom no-repeat;
+  background-size: cover;
+
+  position: absolute;
+  height: 50vw;
+  width: 100%;
+  z-index: -1;
+  
+  bottom: 0;
+}
+
 
 .TracksTitle{
   margin-left: 6% !important;
@@ -152,10 +193,3 @@ input {
     text-align: right;
   }
 }
-
-/*
-.TracksAndWorkshops {
-  position: relative;
-  overflow: hidden;
-}
-*/

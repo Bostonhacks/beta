@@ -5,7 +5,6 @@ import { Grid, Row, Col } from "react-flexbox-grid";
 import gridBlue from "./../../assets/Grids/Sq_grid_Blue.svg";
 import circleBlue from "./../../assets/Circles/Circle_Blue1.svg";
 import triangOrange from "./../../assets/Triangles/Tri_Orng1.svg";
-// import Wave1 from "./../../assets/Waves/Mid_Curve1.svg";
 
 const TracksTitle = styled.p`
   color: #f05352;
@@ -70,18 +69,13 @@ const Row3 = styled.div`
   margin-bottom: 22%;
 `;
 
-/*
-const Background = styled.img`
-  position: absolute;
-  z-index: -1;
-  object-fit: fill;
-  width: 100%;
-`;
-*/
 export class TracksAndWorkshops extends Component {
   render() {
     return (
       <div className="TracksAndWorkshops">
+        <div className="background-div1" />
+        <div className="background-div2" />
+        <div className="background-div3" />
         <Grid fluid>
           <Row1>
             <Row className="TracksTitle">
@@ -126,7 +120,7 @@ export class TracksAndWorkshops extends Component {
                   and moved on to more advanced topics.
                 </TracksCopy>
               </Col>
-              <Col md={12} lg={3}>
+              <Col sm={10} lg={3}>
                 <TrackName> Virtual Reality </TrackName>
                 <TracksCopy>
                   Led by <b> BU AR/VR </b>, hackers got a jumpstart into
