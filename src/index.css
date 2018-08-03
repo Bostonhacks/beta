@@ -148,6 +148,7 @@ input {
 .TracksAndWorkshops {
   position: relative;
   display: flex;
+  min-height: 90vw;
 }
 
 .background-div1 {
@@ -179,7 +180,7 @@ input {
   height: 50vw;
   width: 100%;
   z-index: -1;
-  
+
   bottom: 0;
 }
 
