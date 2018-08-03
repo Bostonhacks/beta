@@ -100,51 +100,6 @@ input {
   font-size: 2vw;
 }
 
-/*
-.TracksAndWorkshops {
-  background:
-      url("assets/Waves/Mid_Curve1.svg") right no-repeat,
-      url("assets/Waves/Mid_Curve1.svg") left no-repeat,
-      url("assets/Waves/Mid_Curve2.svg") right no-repeat;
-  display:flex;
-  background-size: cover;
-}
-
-@media only screen and (min-width: 620px) {
-  .TracksAndWorkshops {
-    background:
-        url("assets/Waves/Mid_Curve1.svg") right no-repeat,
-        url("assets/Waves/Mid_Curve1.svg") left 80% no-repeat,
-        url("assets/Waves/Mid_Curve2.svg") right no-repeat,      
-        url("assets/Waves/Mid_Curve2.svg") left no-repeat;
-    display:flex;
-    background-size: cover, contain, cover, cover;
-  }
-}
-
-@media only screen and (min-width: 995px) {
-  .TracksAndWorkshops {
-  background:
-      url("assets/Waves/Mid_Curve1.svg") right no-repeat,
-      url("assets/Waves/Mid_Curve1.svg") left 80% no-repeat,
-      url("assets/Waves/Mid_Curve2.svg") right no-repeat,      
-      url("assets/Waves/Mid_Curve2.svg") left bottom no-repeat;
-  background-size: cover, contain, cover, contain;
-}
-}
-
-@media only screen and (min-width: 1200px) {
-  .TracksAndWorkshops {    
-    background:
-      url("assets/Waves/Mid_Curve1.svg") right no-repeat,
-      url("assets/Waves/Mid_Curve2.svg") right no-repeat;
-    background-size: cover;
-    width: 100vw;
-    min-height: 102vw;
-  }
-}
-*/
-
 .TracksAndWorkshops {
   position: relative;
   display: flex;
