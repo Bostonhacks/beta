@@ -8,6 +8,8 @@ import AttendAndSponsorBoxes from "./AttendAndSponsorBoxes";
 import TracksAndWorkshops from "./TracksAndWorkshops";
 import Navbar from "./Navbar";
 import HeroText from "./HeroText";
+import Footer from "./Footer";
+import FooterBar from "./FooterBar";
 
 export {
   Container,
@@ -16,8 +18,10 @@ export {
   EventSchedule,
   FAQSection,
   Header,
-  TracksAndWorkshops,
   Navbar,
   HeroText,
-  AttendAndSponsorBoxes
+  Footer,
+  AttendAndSponsorBoxes,
+  TracksAndWorkshops,
+  FooterBar
 };

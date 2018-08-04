@@ -5,15 +5,17 @@ import {
   EventSchedule,
   Navbar,
   FAQSection,
-  Header,
   HeroText,
-  TracksAndWorkshops
+  TracksAndWorkshops,
+  Footer,
+  FooterBar
 } from "./components";
 
 class App extends Component {
   render() {
     return (
       <div>
+        <a name="top" />
         <div className="App">
           <Navbar />
           <div className="Flair">
@@ -35,11 +37,15 @@ class App extends Component {
 
           <FAQSection />
 
-          <Header
-            contentProp="The Footer"
-            colorProp="#FFFFFF"
-            backgroundProp="#3dbecd"
-          />
+          <div className="footerFlair">
+            <div className="footer">
+              <Footer />
+            </div>
+          </div>
+
+          <div>
+            <FooterBar />
+          </div>
         </div>
       </div>
     );
