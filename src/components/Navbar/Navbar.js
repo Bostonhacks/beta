@@ -14,21 +14,32 @@ const Container = styled.div`
 
 const Wrapper = styled.div`
   display: flex;
-  width: 90%;
 
   div {
-    flex: 1;
-  }
-
-  div.logos {
-    padding: 10px;
     display: flex;
     align-items: center;
+  }
 
-    * {
+  div.left {
+    a.mainLogo {
+      margin: 0 60px 0 60px;
+    }
+  }
+
+  div.right {
+    margin-right: 60px;
+    display: flex;
+    align-items: center;
+    a {
+      color: white;
+      text-decoration: none;
       margin: 0 10px 0 10px;
     }
   }
+`;
+
+const Spacer = styled.div`
+  flex: 1;
 `;
 
 const LinkContainer = styled.ul`
@@ -45,6 +56,9 @@ const LinkContainer = styled.ul`
     justify-content: center;
     align-items: center;
     flex: 1;
+    a {
+      padding: 30px;
+    }
   }
 
   a {
@@ -71,28 +85,32 @@ class Navbar extends Component {
     return (
       <Container>
         <Wrapper>
-          <div className="logos">
-            <a href="#">
+          <div className="left">
+            <a className="mainLogo" href="#">
               <img src={Logo} />
             </a>
+
+            <LinkContainer>
+              <li className="navLink active">
+                <a href="#">Home</a>
+              </li>
+              <li className="navLink">
+                <a href="">Contact</a>
+              </li>
+            </LinkContainer>
+          </div>
+
+          <Spacer />
+
+          <div className="right">
             <a href="https://www.facebook.com/bostonhacks/">
               <img src={FacebookLogo} />
             </a>
             <a href="https://twitter.com/boston_hacks">
               <img src={TwitterLogo} />
             </a>
+            <a href="https://museo.bostonhacks.io/">History</a>
           </div>
-          <LinkContainer>
-            <li className="navLink active">
-              <a href="#">Home</a>
-            </li>
-            <li className="navLink">
-              <a href="https://museo.bostonhacks.io/">Museo</a>
-            </li>
-            <li className="navLink">
-              <a href="#">Contact</a>
-            </li>
-          </LinkContainer>
         </Wrapper>
       </Container>
     );
