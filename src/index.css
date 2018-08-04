@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,700');
 
 html {
   height: 100%;
@@ -9,6 +9,47 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+p {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: white;
+  padding: 0.7em 1.4em 0.7em 1.4em;
+  border-radius: 14px;
+  border-style: none;
+  vertical-align: center;
+  cursor: pointer;
+
+  transition-duration: 0.3s;
+  outline: 0;
+}
+button:active {
+  transform: scale(0.9);
+}
+
+input {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 0.7em 1.4em 0.7em 1.4em;
+  margin-right: 10px;
+  border-radius: 14px;
+  border-style: solid;
+  border-color: #aaa;
+  outline: 0;
+}
+
+::placeholder {
+  color: #bbb;
 }
 
 .Flair {
@@ -59,4 +100,66 @@ body {
   color: #ffffff;
   line-height: 10%;
   font-size: 2vw;
+}
+
+.TracksAndWorkshops {
+  position: relative;
+  display: flex;
+  min-height: 90vw;
+}
+
+.background-div1 {
+  background: url("assets/Waves/MidCurve.svg") no-repeat;
+  background-size: cover;
+
+  position: absolute;
+  height: 40vw;
+  width: 100%;
+  z-index: -1;
+}
+
+.background-div2 {
+  background-color: #292563;
+  
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 88vw);
+  z-index: -1;
+
+  margin-top: 39vw;
+}
+
+.background-div3 {
+  background: url("assets/Waves/MidCurve.svg") right bottom no-repeat;
+  background-size: cover;
+
+  position: absolute;
+  height: 50vw;
+  width: 100%;
+  z-index: -1;
+
+  bottom: 0;
+}
+
+
+.TracksTitle{
+  margin-left: 6% !important;
+}
+
+@media only screen and (min-width: 500px) {
+  .TracksTitle {
+    text-align: right;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .icons1 {
+    width: 40px;
+    height: auto;
+  }
+
+  .icons2 {
+    height: 40px;
+    width: auto;
+  }
 }
