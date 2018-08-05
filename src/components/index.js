@@ -6,7 +6,10 @@ import FAQSection from "./FAQSection";
 import Header from "./Header";
 import AttendAndSponsorBoxes from "./AttendAndSponsorBoxes";
 import TracksAndWorkshops from "./TracksAndWorkshops";
+import Navbar from "./Navbar";
+import HeroText from "./HeroText";
 import Footer from "./Footer";
+import FooterBar from "./FooterBar";
 
 export {
   Container,
@@ -15,9 +18,10 @@ export {
   EventSchedule,
   FAQSection,
   Header,
-  // AttendBox,
-  // SponsorBox,
+  Navbar,
+  HeroText,
   Footer,
   AttendAndSponsorBoxes,
-  TracksAndWorkshops
+  TracksAndWorkshops,
+  FooterBar
 };

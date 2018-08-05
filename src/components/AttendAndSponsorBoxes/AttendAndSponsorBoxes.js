@@ -8,7 +8,7 @@ import { Flex, Box } from "grid-styled";
 class AttendAndSponsorBoxes extends Component {
   render() {
     return (
-      <Flex className="attendSponsorFlex" flexDirection={"row"} wrap>
+      <Flex className="attendSponsorFlex" flexDirection={"row"}>
         <Box
           width={[1, 1 / 2, 1 / 2, 1 / 2]}
           pl={[52, 52, 100, 280]}

@@ -3,13 +3,13 @@ import React, { Component } from "react";
 import {
   AttendAndSponsorBoxes,
   EventSchedule,
+  Navbar,
   FAQSection,
+  HeroText,
   TracksAndWorkshops,
-  Footer
+  Footer,
+  FooterBar
 } from "./components";
-// import { Header } from "./components/Header/Header";
-import HeroText from "./components/HeroText";
-import { FooterBar } from "./components/FooterBar/footerbar";
 
 class App extends Component {
   render() {
@@ -17,6 +17,7 @@ class App extends Component {
       <div>
         <a name="top" />
         <div className="App">
+          <Navbar />
           <div className="Flair">
             <div className="headerbar">
               <HeroText
