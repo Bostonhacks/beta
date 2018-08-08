@@ -22,12 +22,18 @@ const FormTitle = styled.p`
   font-weight: 500;
   font-size: 20px;
   color: ${props => props.color};
+  @media (max-width: 1070px) and (min-width: 866px) {
+    min-height: 48px;
+  }
 `;
 
 const FormBody = styled.p`
   font-family: "Roboto Slab", serif;
   font-weight: 300;
   font-size: 12px;
+  @media (max-width: 1370px) and (min-width: 768px) {
+    min-height: 32px;
+  }
 `;
 
 const ZigZag = styled.img`
