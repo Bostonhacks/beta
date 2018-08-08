@@ -26,14 +26,20 @@ const eventsSun = [
 ];
 
 const EventScheduleTitle = styled.h2`
+  padding-left: calc(120px + 1.2em);
   color: #ef9b75;
   font-family: "Roboto", sans-serif;
   font-size: 33px;
   font-weight: 500;
   position: relative;
-  margin-left: 13%;
   @media (max-width: 500px) {
     font-size: 17px;
+    text-align: center;
+    padding-left: 0;
+  }
+  @media (max-width: 991px) {
+    text-align: center;
+    padding-left: 0;
   }
 `;
 
@@ -58,7 +64,7 @@ class EventSchedule extends Component {
             <Col xs={1}>
               <CircleGreen src={circleGreen} className="icons2" />
             </Col>
-            <Col xs={10} lg={9}>
+            <Col xs={10} lg={10}>
               <EventScheduleTitle> Event Schedule </EventScheduleTitle>
               <Row>
                 <Col md={12} lg={6}>
@@ -69,7 +75,7 @@ class EventSchedule extends Component {
                 </Col>
               </Row>
             </Col>
-            <Col xs={1} lg={2}>
+            <Col xs={1} lg={1}>
               <img src={zigzag} align="right" className="icons1" />
               <GreenGrid src={gridBlue} className="icons1" />
             </Col>
