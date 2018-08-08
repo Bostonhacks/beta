@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Logo from "../../assets/Logos/Logo-Small_header.svg";
 import FacebookLogo from "../../assets/Logos/fb.svg";
 import TwitterLogo from "../../assets/Logos/Twitter.svg";
+import HamburgerImg from "../../assets/Logos/hamburger.svg";
 
 const Container = styled.div`
   background-color: #5b5480;
@@ -13,6 +14,10 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
+  @media (max-width: 700px) {
+    display: none;
+  }
+
   display: flex;
 
   div {
@@ -38,6 +43,31 @@ const Wrapper = styled.div`
   }
 `;
 
+const WrapperMobile = styled.div`
+  @media (min-width: 700px) {
+    display: none;
+  }
+
+  display: flex;
+
+  div {
+    display: flex;
+    align-items: center;
+  }
+
+  div.left {
+    a.mainLogo {
+      margin: 0 30px 0 30px;
+    }
+  }
+
+  div.right {
+    a.hamburgerLink {
+      padding: 0 30px 0 30px;
+    }
+  }
+`;
+
 const Spacer = styled.div`
   flex: 1;
 `;
@@ -57,7 +87,10 @@ const LinkContainer = styled.ul`
     align-items: center;
     flex: 1;
     a {
-      padding: 30px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
     }
   }
 
@@ -84,18 +117,32 @@ class Navbar extends Component {
   render() {
     return (
       <Container>
+        <WrapperMobile>
+          <div className="left">
+            <a className="mainLogo" href="/">
+              <img src={Logo} />
+            </a>
+          </div>
+          <Spacer />
+          <div className="right">
+            <a className="hamburgerLink">
+              <img src={HamburgerImg} />
+            </a>
+          </div>
+        </WrapperMobile>
+
         <Wrapper>
           <div className="left">
-            <a className="mainLogo" href="#">
+            <a className="mainLogo" href="/">
               <img src={Logo} />
             </a>
 
             <LinkContainer>
               <li className="navLink active">
-                <a href="#">Home</a>
+                <a href="/">Home</a>
               </li>
               <li className="navLink">
-                <a href="">Contact</a>
+                <a href="/contact">Contact</a>
               </li>
             </LinkContainer>
           </div>
@@ -109,7 +156,7 @@ class Navbar extends Component {
             <a href="https://twitter.com/boston_hacks">
               <img src={TwitterLogo} />
             </a>
-            <a href="https://museo.bostonhacks.io/">History</a>
+            <a href="https://museum.bostonhacks.io/">History</a>
           </div>
         </Wrapper>
       </Container>
