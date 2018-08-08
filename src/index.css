@@ -50,11 +50,9 @@ input {
 }
 
 .Flair {
-  background:
-      url("assets/Waves/Header_Curve1.svg") no-repeat,
-      url("assets/Waves/Header_Curve2.svg") no-repeat;
+  background: url("assets/Waves/Header_Curve.svg") no-repeat;
   display:flex;
-  background-size: contain;
+  background-size: cover;
 }
 
 .footerFlair {
@@ -74,9 +72,9 @@ input {
 
 
 .headerbar {
-  margin-top: 20%;
+  padding-top: 20%;
   margin-left: 12%;
-  margin-bottom: 25%;
+  margin-bottom: 23%;
   align-items: center;
   display: flex;
 }
@@ -133,7 +131,7 @@ input {
 
 .background-div2 {
   background-color: #292563;
-  
+
   position: absolute;
   width: 100%;
   height: calc(100% - 88vw);
@@ -174,5 +172,21 @@ input {
   .icons2 {
     height: 40px;
     width: auto;
+  }
+
+  .Title {
+    font-size: 8vw;
+  }
+
+  .Bold {
+    font-size: 8vw;
+  }
+
+  .Date {
+    font-size: 3vw;
+  }
+
+  .Location {
+    font-size: 3vw;
   }
 }
