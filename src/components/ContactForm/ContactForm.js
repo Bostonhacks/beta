@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { Grid, Row, Col } from "react-flexbox-grid";
+import { ContactFormBody } from "../";
 
 import zigzag from "./../../assets/ZigZags/Line_Green2.svg";
 
@@ -29,37 +30,12 @@ const FormBody = styled.p`
   font-size: 12px;
 `;
 
-const FormInput = styled.div`
-  margin: 20px 0;
-  label {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 13px;
-    display: block;
-    margin-bottom: 5px;
-  }
-  input,
-  textarea {
-    box-sizing: border-box;
-    width: 100%;
-    background-color: #f2f2f2;
-  }
-  textarea {
-    border-style: double;
-    border-width: 2px;
-    min-height: 150px;
-    resize: none;
-  }
-`;
-
 const ZigZag = styled.img`
   float: right;
   position: relative;
   top: 55%;
   z-index: -1;
 `;
-
-const Form = styled.div``;
 
 export class ContactForm extends Component {
   render() {
@@ -85,48 +61,14 @@ export class ContactForm extends Component {
                   Send us any questions, comments, concerns, or suggestions
                   here!
                 </FormBody>
-                <Form>
-                  <FormInput>
-                    <label htmlFor="full_name"> Full Name* </label>
-                    <input type="text" name="full_name" id="full_name" />
-                  </FormInput>
-                  <FormInput>
-                    <label htmlFor="email"> Email* </label>
-                    <input type="email" name="email" id="email" />
-                  </FormInput>
-                  <FormInput>
-                    <label htmlFor="subject"> Subject </label>
-                    <input type="text" name="subject" id="subject" />
-                  </FormInput>
-                  <FormInput height="150px">
-                    <label htmlFor="message"> Message* </label>
-                    <textarea type="text" name="message" id="message" />
-                  </FormInput>
-                </Form>
+                <ContactFormBody color="#2fb5e3" />
               </Col>
               <Col mdOffset={2} md={5} xs={12}>
                 <FormTitle color="#F05352">Interested in Sponsoring?</FormTitle>
                 <FormBody>
                   We’d love to have you on board. Contact us here!
                 </FormBody>
-                <Form>
-                  <FormInput>
-                    <label htmlFor="full_name"> Full Name* </label>
-                    <input type="text" name="full_name" id="full_name" />
-                  </FormInput>
-                  <FormInput>
-                    <label htmlFor="email"> Email* </label>
-                    <input type="email" name="email" id="email" />
-                  </FormInput>
-                  <FormInput>
-                    <label htmlFor="subject"> Subject </label>
-                    <input type="text" name="subject" id="subject" />
-                  </FormInput>
-                  <FormInput height="150px">
-                    <label htmlFor="message"> Message* </label>
-                    <textarea type="text" name="message" id="message" />
-                  </FormInput>
-                </Form>
+                <ContactFormBody color="#f05352" />
               </Col>
             </Row>
           </Col>

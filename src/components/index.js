@@ -8,6 +8,7 @@ import AttendAndSponsorBoxes from "./AttendAndSponsorBoxes";
 import TracksAndWorkshops from "./TracksAndWorkshops";
 import Footer from "./Footer";
 import ContactForm from "./ContactForm";
+import ContactFormBody from "./ContactFormBody";
 
 export {
   Container,
@@ -21,5 +22,6 @@ export {
   Footer,
   AttendAndSponsorBoxes,
   TracksAndWorkshops,
-  ContactForm
+  ContactForm,
+  ContactFormBody
 };
