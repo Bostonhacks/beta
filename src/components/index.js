@@ -3,7 +3,6 @@ import ScheduleRow from "./ScheduleRow";
 import ScheduleTable from "./ScheduleTable";
 import EventSchedule from "./EventSchedule";
 import FAQSection from "./FAQSection";
-import Header from "./Header";
 import AttendAndSponsorBoxes from "./AttendAndSponsorBoxes";
 import TracksAndWorkshops from "./TracksAndWorkshops";
 import Footer from "./Footer";
@@ -14,9 +13,6 @@ export {
   ScheduleTable,
   EventSchedule,
   FAQSection,
-  Header,
-  // AttendBox,
-  // SponsorBox,
   Footer,
   AttendAndSponsorBoxes,
   TracksAndWorkshops

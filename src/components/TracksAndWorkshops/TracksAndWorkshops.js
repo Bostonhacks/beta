@@ -139,16 +139,4 @@ export class TracksAndWorkshops extends Component {
   }
 }
 
-// Header.propTypes = {
-//   contentProp: PropTypes.string,
-//   colorProp: PropTypes.string,
-//   backgroundProp: PropTypes.string
-// };
-
-// Header.defaultProps = {
-//   contentProp: "A header should go here",
-//   colorProp: "#dc4b6a",
-//   backgroundProp: "#3dbecd"
-// };
-
 export default TracksAndWorkshops;
