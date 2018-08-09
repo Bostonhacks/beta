@@ -52,7 +52,27 @@ const GreenGrid = CircleGreen.extend`
   @media (max-width: 990px) {
     float: right;
   }
+  @media (max-width: 630px) {
+    width: 100px;
+  }
+  @media (max-width: 500px) {
+    width: 50px;
+  }
   z-index: -1;
+`;
+
+const ZigZag = styled.img`
+  position: relative;
+  float: right;
+  @media (max-width: 767px) {
+    margin-top: 150px;
+  }
+  @media (max-width: 630px) {
+    width: 80px;
+  }
+  @media (max-width: 500px) {
+    width: 50px;
+  }
 `;
 
 class EventSchedule extends Component {
@@ -76,8 +96,8 @@ class EventSchedule extends Component {
               </Row>
             </Col>
             <Col xs={1} lg={1}>
-              <img src={zigzag} align="right" className="icons1" />
-              <GreenGrid src={gridBlue} className="icons1" />
+              <ZigZag src={zigzag} />
+              <GreenGrid src={gridBlue} />
             </Col>
           </Row>
         </Grid>
