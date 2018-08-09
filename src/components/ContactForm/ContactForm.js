@@ -4,6 +4,7 @@ import { Grid, Row, Col } from "react-flexbox-grid";
 import { ContactFormBody } from "../";
 
 import zigzag from "./../../assets/ZigZags/Line_Green2.svg";
+import triangOrange from "./../../assets/Triangles/Tri_Orng1.svg";
 
 const ContactUs = styled.p`
   font-family: "Roboto", sans-serif;
@@ -43,12 +44,30 @@ const ZigZag = styled.img`
   z-index: -1;
 `;
 
+const Triangle = styled.img`
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+
+  position: relative;
+  top: 70%;
+  left: -25px;
+
+  z-index: -1;
+`;
+
 export class ContactForm extends Component {
   render() {
     return (
       <Grid fluid style={{ padding: "0" }}>
         <Row>
-          <Col mdOffset={2} md={8} xsOffset={1} xs={10}>
+          <Col md={2} xs={1}>
+            <Triangle src={triangOrange} />
+          </Col>
+          <Col md={8} xs={10}>
             <ContactUs> Contact Us </ContactUs>
             <Row>
               <Col md={9}>
