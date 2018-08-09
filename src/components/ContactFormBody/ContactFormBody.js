@@ -81,7 +81,6 @@ export class ContactFormBody extends Component {
           flash: [...prevState.flash, ["red", "Please fill in required spaces"]]
         }));
       }
-      console.log(this.state.flash);
     }
   };
 
