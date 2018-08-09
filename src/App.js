@@ -5,11 +5,10 @@ import {
   EventSchedule,
   FAQSection,
   TracksAndWorkshops,
-  Footer
+  Footer,
+  HeroText,
+  FooterBar
 } from "./components";
-
-import HeroText from "./components/HeroText";
-import { FooterBar } from "./components/FooterBar/footerbar";
 
 class App extends Component {
   render() {

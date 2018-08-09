@@ -4,9 +4,9 @@ import SponsorBox from "../SponsorBox";
 import { Row, Col } from "react-flexbox-grid";
 import styled from "styled-components";
 
-import GridOrng from "./../../assets/Grids/Dot_Grid_Orng1.svg";
-import RedCircle from "./../../assets/Circles/Circle_pink.svg";
-import BlueCircle from "./../../assets/Circles/Circle_Blue2.svg";
+import gridOrng from "./../../assets/Grids/Dot_Grid_Orng1.svg";
+import redCircle from "./../../assets/Circles/Circle_pink.svg";
+import blueCircle from "./../../assets/Circles/Circle_Blue2.svg";
 
 const AttArea = styled.div`
   max-width: 400px;
@@ -62,7 +62,7 @@ class AttendAndSponsorBoxes extends Component {
       <React.Fragment>
         <Row>
           <Col md={2} className="hidden-xs hidden-sm">
-            <Grid src={GridOrng} />
+            <Grid src={gridOrng} />
           </Col>
           <Col md={5}>
             <AttArea>
@@ -75,15 +75,15 @@ class AttendAndSponsorBoxes extends Component {
             </SponsorArea>
           </Col>
           <Col md={1} className="hidden-md hidden-lg hidden-xl">
-            <CircleBlue src={BlueCircle} />
+            <CircleBlue src={blueCircle} />
           </Col>
         </Row>
         <Row>
           <Col xs={6} className="hidden-md hidden-lg hidden-xl">
-            <Grid src={GridOrng} />
+            <Grid src={gridOrng} />
           </Col>
           <Col md={12} xs={6}>
-            <CircleRed src={RedCircle} />
+            <CircleRed src={redCircle} />
           </Col>
         </Row>
       </React.Fragment>
