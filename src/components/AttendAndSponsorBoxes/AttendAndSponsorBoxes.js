@@ -1,29 +1,50 @@
 import React, { Component } from "react";
 import AttendBox from "../AttendBox";
 import SponsorBox from "../SponsorBox";
-import { Flex, Box } from "grid-styled";
+import { Row, Col } from "react-flexbox-grid";
+import styled from "styled-components";
 
-// Another pattern that is closer to the design but has small boxes:
-// 1/4 + 13/60 + 4/60 + 13/60 + 1/4
+const AttArea = styled.div`
+  max-width: 400px;
+  margin: auto;
+  padding-right: 15%;
+  @media (max-width: 767px) {
+    padding-right: 0;
+    padding-bottom: 10%;
+  }
+
+  @media (max-width: 500px) {
+    margin: 0 15% 0 15%;
+  }
+`;
+
+const SponsorArea = styled.div`
+  max-width: 400px;
+  margin: auto;
+  @media (max-width: 500px) {
+    margin: 0 15% 0 15%;
+  }
+`;
+
 class AttendAndSponsorBoxes extends Component {
   render() {
     return (
-      <Flex className="attendSponsorFlex" flexDirection={"row"} wrap>
-        <Box
-          width={[1, 1 / 2, 1 / 2, 1 / 2]}
-          pl={[52, 52, 100, 280]}
-          pr={[52, 24, 48, 76]}
-        >
-          <AttendBox />
-        </Box>
-        <Box
-          width={[1, 1 / 2, 1 / 2, 1 / 2]}
-          pl={[52, 24, 48, 76]}
-          pr={[52, 52, 100, 280]}
-        >
-          <SponsorBox />
-        </Box>
-      </Flex>
+      <React.Fragment>
+        <Row>
+          <Col md={2} />
+          <Col md={5}>
+            <AttArea>
+              <AttendBox />
+            </AttArea>
+          </Col>
+          <Col md={4}>
+            <SponsorArea>
+              <SponsorBox />
+            </SponsorArea>
+          </Col>
+          <Col md={1} />
+        </Row>
+      </React.Fragment>
     );
   }
 }

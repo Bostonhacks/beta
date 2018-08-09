@@ -33,7 +33,7 @@ const EventScheduleTitle = styled.h2`
   font-weight: 500;
   position: relative;
   @media (max-width: 500px) {
-    font-size: 17px;
+    font-size: 20px;
     text-align: center;
     padding-left: 0;
   }
