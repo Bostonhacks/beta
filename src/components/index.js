@@ -12,6 +12,7 @@ import ContactHead from "./ContactHead";
 import ContactFoot from "./ContactFoot";
 import FooterBar from "./FooterBar";
 import HeroText from "./HeroText";
+import ContactFormBody from "./ContactFormBody";
 
 export {
   Container,
@@ -29,5 +30,6 @@ export {
   ContactForm,
   ContactFoot,
   ContactHead,
-  HeroText
+  HeroText,
+  ContactFormBody
 };
