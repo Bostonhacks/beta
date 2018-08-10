@@ -68,6 +68,16 @@ const WrapperMobile = styled.div`
   }
 `;
 
+const MobileMenu = styled.div`
+  // display: flex;
+  display: none;
+
+  text-align: center;
+  a {
+    width: 100%;
+  }
+`;
+
 const Spacer = styled.div`
   flex: 1;
 `;
@@ -114,6 +124,15 @@ const LinkContainer = styled.ul`
 `;
 
 class Navbar extends Component {
+  toggleMobileMenu = function() {
+    var menuOpen = document.getElementById("mobileMenu").style.display;
+    if (menuOpen === "block") {
+      document.getElementById("mobileMenu").style.display = "none";
+    } else {
+      document.getElementById("mobileMenu").style.display = "block";
+    }
+  };
+
   render() {
     return (
       <Container>
@@ -125,7 +144,7 @@ class Navbar extends Component {
           </div>
           <Spacer />
           <div className="right">
-            <a className="hamburgerLink">
+            <a className="hamburgerLink" onClick={this.toggleMobileMenu}>
               <img src={HamburgerImg} />
             </a>
           </div>
@@ -159,6 +178,25 @@ class Navbar extends Component {
             <a href="https://museum.bostonhacks.io/">History</a>
           </div>
         </Wrapper>
+
+        <MobileMenu id="mobileMenu">
+          <br />
+          <a href="/"> Home </a>
+          <br />
+          <br />
+          <a href="/contact"> Contact </a>
+          <br />
+          <br />
+          <a href="https://www.facebook.com/bostonhacks"> Our Facebook </a>
+          <br />
+          <br />
+          <a href="https://twitter.com/boston_hacks"> Our Twitter </a>
+          <br />
+          <br />
+          <a href="https://museum.bostonhacks.io/"> Our History </a>
+          <br />
+          &nbsp;
+        </MobileMenu>
       </Container>
     );
   }
