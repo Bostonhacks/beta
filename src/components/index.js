@@ -8,6 +8,8 @@ import AttendAndSponsorBoxes from "./AttendAndSponsorBoxes";
 import TracksAndWorkshops from "./TracksAndWorkshops";
 import Footer from "./Footer";
 import ContactForm from "./ContactForm";
+import ContactHead from "./ContactHead";
+import ContactFoot from "./ContactFoot";
 import FooterBar from "./FooterBar";
 import HeroText from "./HeroText";
 
@@ -25,5 +27,7 @@ export {
   TracksAndWorkshops,
   FooterBar,
   ContactForm,
+  ContactFoot,
+  ContactHead,
   HeroText
 };

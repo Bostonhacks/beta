@@ -1,26 +1,19 @@
 import React, { Component } from "react";
-import { ContactForm, FooterBar } from "./components";
+import { ContactForm, FooterBar, ContactFoot, ContactHead } from "./components";
+import "./contact.css";
 
-import headwave from "./assets/Waves/ConactHead.svg";
-import footwave from "./assets/Waves/ContactFoot.svg";
+// import headwave from "./assets/Waves/ConactHead.svg";
 
 class ContactPage extends Component {
   render() {
     return (
       <div>
         <div>
-          <img src={headwave} />
+          <ContactHead />
         </div>
-        <div>
-          <ContactForm />
-        </div>
-        <div>
-          <img src={footwave} />
-        </div>
-
-        <div>
-          <FooterBar />
-        </div>
+        <ContactForm />
+        <ContactFoot />
+        <FooterBar />
       </div>
     );
   }
