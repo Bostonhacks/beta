@@ -17,27 +17,27 @@ const EmailField = styled.input`
 const Text = styled.div`
   font-family: "Roboto slab", sans-serif;
   font-weight: 300;
-  font-size: 22px;
+  font-size: 1.375em;
   padding-top: 5%;
   padding-bottom: 8%;
 
   @media (max-width: 850px) {
-    font-size: 18px;
+    font-size: 1.125em;
   }
 
   @media (max-width: 500px) {
-    font-size: 17px;
+    font-size: 1.06em;
   }
 `;
 
 const Title = styled.h2`
   font-family: "Roboto", sans-serif;
-  font-size: 32px;
+  font-size: 2em;
   font-weight: 500;
   margin: 0;
   color: #2fb5e3;
   @media (max-width: 500px) {
-    font-size: 25px;
+    font-size: 1.56em;
   }
 `;
 

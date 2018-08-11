@@ -49,13 +49,13 @@ const Title = styled.h1`
   color: #ffffff;
   display: inline;
   line-height: 0%;
-  font-size: 75px;
+  font-size: 4.68em;
   @media (max-width: 1235px) {
     font-size: 6vw;
   }
 
   @media (max-width: 500px) {
-    font-size: 30px;
+    font-size: 1.87em;
   }
 `;
 
@@ -68,13 +68,13 @@ const Loc = styled.h3`
   font-weight: 100;
   color: #ffffff;
   line-height: 10%;
-  font-size: 25px;
+  font-size: 1.56em;
   @media (max-width: 1235px) {
     font-size: 2vw;
   }
 
   @media (max-width: 500px) {
-    font-size: 14px;
+    font-size: 0.875em;
   }
 `;
 

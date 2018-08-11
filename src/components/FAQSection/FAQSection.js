@@ -10,27 +10,27 @@ import circle from "../../assets/Circles/Half_Circle_Orng.svg";
 const FAQEntryTitle = styled.div`
   margin-bottom: -10px;
   font-family: "Roboto", sans-serif;
-  font-size: 30px;
+  font-size: 1.9em;
   font-weight: 400;
   color: #3bb9e3;
 `;
 
 const FAQAnswer = styled.div`
   font-family: "Roboto Slab", serif;
-  font-size: 20px;
+  font-size: 1.5em;
   font-weight: 300;
   max-width: 13em;
   text-align: left;
 `;
 
 const FAQHeader = FAQEntryTitle.extend`
-  font-size: 30px;
+  font-size: 2em;
   font-weight: 500;
   margin-top: 10%;
 `;
 
 const FAQHeaderCopy = FAQEntryTitle.extend`
-  font-size: 20px;
+  font-size: 1.4em;
   font-weight: 500;
   color: #000000;
   font-family: "Roboto Slab", serif;

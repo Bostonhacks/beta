@@ -29,11 +29,11 @@ const EventScheduleTitle = styled.h2`
   padding-left: calc(120px + 1.2em);
   color: #ef9b75;
   font-family: "Roboto", sans-serif;
-  font-size: 33px;
+  font-size: 2.06em;
   font-weight: 500;
   position: relative;
   @media (max-width: 500px) {
-    font-size: 20px;
+    font-size: 1.56em;
     text-align: center;
     padding-left: 0;
   }

@@ -22,10 +22,10 @@ const Table = styled.table`
 const Title = styled.th`
   padding-left: 7%;
   font-family: "Roboto", sans-serif;
-  font-size: 30px;
+  font-size: 1.875em;
   font-weight: 400;
   @media (max-width: 500px) {
-    font-size: 16px;
+    font-size: 1em;
   }
 `;
 
