@@ -3,10 +3,11 @@ import React, { Component } from "react";
 import {
   AttendAndSponsorBoxes,
   EventSchedule,
+  // Navbar,
   FAQSection,
+  HeroText,
   TracksAndWorkshops,
   Footer,
-  HeroText,
   FooterBar
 } from "./components";
 
