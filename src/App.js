@@ -18,15 +18,13 @@ class App extends Component {
         <a name="top" />
         <div className="App">
           <Navbar />
-          <div className="Flair">
-            <div className="headerbar">
-              <HeroText
-                title="Boston"
-                titleBold="Hacks"
-                date="November 10th - November 11th"
-                location="Boston University"
-              />
-            </div>
+          <div className="headerbar">
+            <HeroText
+              title="Boston"
+              titleBold="Hacks"
+              date="November 10th - November 11th"
+              location="Boston University"
+            />
           </div>
 
           <AttendAndSponsorBoxes />
