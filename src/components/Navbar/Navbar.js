@@ -27,7 +27,7 @@ const Wrapper = styled.div`
 
   div.left {
     a.mainLogo {
-      margin: 0 60px 0 60px;
+      margin: 10px 60px 10px 60px;
     }
   }
 
@@ -57,7 +57,7 @@ const WrapperMobile = styled.div`
 
   div.left {
     a.mainLogo {
-      margin: 0 30px 0 30px;
+      margin: 10px 30px 10px 30px;
     }
   }
 
@@ -82,46 +82,46 @@ const Spacer = styled.div`
   flex: 1;
 `;
 
-const LinkContainer = styled.ul`
-  display: flex;
-  list-style-type: none;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  flex: 1;
-  li {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    a {
-      padding-top: 20px;
-      padding-bottom: 20px;
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-  }
-
-  a {
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-    height: 100%;
-    width: 100%;
-  }
-
-  li.active {
-    a {
-      color: #928aa7;
-    }
-    border-bottom: 5px solid #928aa7;
-  }
-`;
+// const LinkContainer = styled.ul`
+//   display: flex;
+//   list-style-type: none;
+//   justify-content: space-around;
+//   align-items: center;
+//   margin: 0;
+//   padding: 0;
+//   flex: 1;
+//   li {
+//     height: 100%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex: 1;
+//     a {
+//       padding-top: 20px;
+//       padding-bottom: 20px;
+//       padding-left: 10px;
+//       padding-right: 10px;
+//     }
+//   }
+//
+//   a {
+//     text-transform: uppercase;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     text-decoration: none;
+//     color: white;
+//     height: 100%;
+//     width: 100%;
+//   }
+//
+//   li.active {
+//     a {
+//       color: #928aa7;
+//     }
+//     border-bottom: 5px solid #928aa7;
+//   }
+// `;
 
 class Navbar extends Component {
   toggleMobileMenu = function() {
@@ -155,15 +155,6 @@ class Navbar extends Component {
             <a className="mainLogo" href="/">
               <img src={Logo} />
             </a>
-
-            <LinkContainer>
-              <li className="navLink active">
-                <a href="/">Home</a>
-              </li>
-              <li className="navLink">
-                <a href="/contact">Contact</a>
-              </li>
-            </LinkContainer>
           </div>
 
           <Spacer />
@@ -180,12 +171,6 @@ class Navbar extends Component {
         </Wrapper>
 
         <MobileMenu id="mobileMenu">
-          <br />
-          <a href="/"> Home </a>
-          <br />
-          <br />
-          <a href="/contact"> Contact </a>
-          <br />
           <br />
           <a href="https://www.facebook.com/bostonhacks"> Our Facebook </a>
           <br />
