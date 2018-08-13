@@ -172,13 +172,13 @@ class Navbar extends Component {
 
         <MobileMenu id="mobileMenu">
           <br />
-          <a href="https://www.facebook.com/bostonhacks"> Our Facebook </a>
+          <a href="https://www.facebook.com/bostonhacks"> Facebook </a>
           <br />
           <br />
-          <a href="https://twitter.com/boston_hacks"> Our Twitter </a>
+          <a href="https://twitter.com/boston_hacks"> Twitter </a>
           <br />
           <br />
-          <a href="https://museum.bostonhacks.io/"> Our History </a>
+          <a href="https://museum.bostonhacks.io/"> History </a>
           <br />
           &nbsp;
         </MobileMenu>
