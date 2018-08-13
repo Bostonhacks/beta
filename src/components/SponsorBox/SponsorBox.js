@@ -4,7 +4,7 @@ import styled from "styled-components";
 import sponsor from "./../../documents/BostonHacks_Sponsorship_V3.pdf";
 
 const DocButton = styled.button`
-  background-color: #ef9b75;
+  background-color: #f05352;
 `;
 
 const Text = styled.div`
