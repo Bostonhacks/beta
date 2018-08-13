@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import axios from "axios";
+// import axios from "axios";
 
 const FlashMessage = props => {
   return <p style={{ color: props.color }}> {props.text} </p>;
@@ -54,9 +54,9 @@ export class ContactFormBody extends Component {
   };
 
   handleClick = e => {
-    let btoa = function(str) {
-      return Buffer.from(str).toString("base64");
-    };
+    // let btoa = function(str) {
+    //   return Buffer.from(str).toString("base64");
+    // };
     e.preventDefault();
 
     let isValidEmail = this.state.email.match(
@@ -79,12 +79,15 @@ export class ContactFormBody extends Component {
             ["red", "Oh no! We couldn't recognize that email. Typo?"]
           ]
         }));
-      }
 
-      if (!this.state.full_name || !this.state.message) {
-        this.setState(prevState => ({
-          flash: [...prevState.flash, ["red", "Please fill in required spaces"]]
-        }));
+        if (!this.state.full_name || !this.state.message) {
+          this.setState(prevState => ({
+            flash: [
+              ...prevState.flash,
+              ["red", "Please fill in required spaces"]
+            ]
+          }));
+        }
       }
     }
   };
