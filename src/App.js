@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import {
   AttendAndSponsorBoxes,
   EventSchedule,
-  // Navbar,
+  Navbar,
   FAQSection,
   HeroText,
   TracksAndWorkshops,
@@ -17,15 +17,14 @@ class App extends Component {
       <div>
         <a name="top" />
         <div className="App">
-          <div className="Flair">
-            <div className="headerbar">
-              <HeroText
-                title="Boston"
-                titleBold="Hacks"
-                date="November 10th - November 11th"
-                location="Boston University"
-              />
-            </div>
+          <Navbar />
+          <div className="headerbar">
+            <HeroText
+              title="Boston"
+              titleBold="Hacks"
+              date="November 10th - November 11th"
+              location="Boston University"
+            />
           </div>
 
           <AttendAndSponsorBoxes />

@@ -1,21 +1,44 @@
 import React, { Component, Fragment } from "react";
-import Header from "../Header";
 import styled from "styled-components";
+import { Row, Col } from "react-flexbox-grid";
 
-const Button = styled.input`
+const SubscribeButton = styled.button`
   background-color: #2fb5e3;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  color: white;
-  padding: 0.7em 1.4em 0.7em 1.4em;
-  border-radius: 14px;
-  border-style: none;
-  vertical-align: center;
-  cursor: pointer;
+  box-sizing: border-box;
+`;
 
-  transition-duration: 0.3s;
-  outline: 0;
+const EmailField = styled.input`
+  width: 76%;
+  @media (max-width: 500px) {
+    width: 67%;
+  }
+`;
+
+const Text = styled.div`
+  font-family: "Roboto slab", sans-serif;
+  font-weight: 300;
+  font-size: 1.375em;
+  padding-top: 5%;
+  padding-bottom: 8%;
+
+  @media (max-width: 850px) {
+    font-size: 1.125em;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 1.06em;
+  }
+`;
+
+const Title = styled.h2`
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+  font-weight: 500;
+  margin: 0;
+  color: #2fb5e3;
+  @media (max-width: 500px) {
+    font-size: 1.56em;
+  }
 `;
 
 class AttendBox extends Component {
@@ -38,12 +61,12 @@ class AttendBox extends Component {
   render() {
     return (
       <Fragment>
-        <Header contentProp="Attend" colorProp="#2fb5e3" />
-        <p>
+        <Title>Attend</Title>
+        <Text>
           Thanks for the interest! Leave your email address below or follow us
           on social media to get notified when there is more information and
           registration opens!
-        </p>
+        </Text>
         <div>
           <form
             action="https://bostonhacks.us18.list-manage.com/subscribe/post?u=f6d6fee90aa63339dffc8ccca&amp;id=8873714a91"
@@ -54,39 +77,43 @@ class AttendBox extends Component {
             target="_blank"
             noValidate
           >
-            <div id="mc_embed_signup_scroll form-group">
-              <input
-                type="email"
-                name="EMAIL"
-                value={this.state.userEmail}
-                onChange={this.handleChange}
-                className="email form-control"
-                id="mce-EMAIL"
-                placeholder="hacker@anyschool.edu"
-                required
-              />
-              <br />
-              <div
-                style={{ position: "absolute", left: "-5000px" }}
-                aria-hidden="true"
-              >
-                <input
-                  type="text"
-                  name="b_13cd178ce59e4de2a1ecb4265_1954f2ac95"
-                  tabIndex="-1"
-                  value=""
+            <Row>
+              <Col md={6} xs={6}>
+                <EmailField
+                  type="email"
+                  name="EMAIL"
+                  value={this.state.userEmail}
+                  onChange={this.handleChange}
+                  className="email form-control"
+                  id="mce-EMAIL"
+                  placeholder="hacker@anyschool.edu"
+                  required
                 />
-              </div>
-              <div className="clear">
-                <Button
-                  type="submit"
-                  value="Subscribe"
-                  name="subscribe"
-                  id="mc-embedded-subscribe"
-                  className="button btn btn-outline-danger"
-                />
-              </div>
-            </div>
+              </Col>
+              <Col md={6} xs={6}>
+                <div
+                  style={{ position: "absolute", left: "-5000px" }}
+                  aria-hidden="true"
+                >
+                  <input
+                    type="text"
+                    name="b_13cd178ce59e4de2a1ecb4265_1954f2ac95"
+                    tabIndex="-1"
+                    value=""
+                  />
+                </div>
+                <div className="clear">
+                  <SubscribeButton
+                    type="submit"
+                    name="subscribe"
+                    id="mc-embedded-subscribe"
+                    className="button btn btn-outline-danger"
+                  >
+                    Subscribe
+                  </SubscribeButton>
+                </div>
+              </Col>
+            </Row>
           </form>
         </div>
       </Fragment>
