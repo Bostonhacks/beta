@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from "react";
 import Header from "../Header";
-import { Link } from "react-router-dom";
+
+import sponsor from "./../../documents/BostonHacks_Sponsorship_V3.pdf";
 
 class SponsorBox extends Component {
   render() {
@@ -9,7 +10,7 @@ class SponsorBox extends Component {
         <Header contentProp="Sponsor" colorProp="#f05352" />
         <p>We would love to have you on board. Contact us here!</p>
         <button style={{ backgroundColor: "#f05352" }}>
-          <Link to="/contact_page"> Contact Us </Link>
+          <a href={sponsor}>Learn more</a>
         </button>
       </Fragment>
     );
