@@ -40,8 +40,10 @@ class SponsorBox extends Component {
       <Fragment>
         <Title>Sponsor</Title>
         <Text>
-          We would love to have you on board. Contact us at
-          <span style={{ color: "#f05352" }}> contact@bostonhacks.io </span>
+          We would love to have you on board. Contact us at&nbsp;
+          <a href="mailto:contact@bostonhacks.io" style={{ color: "#f05352" }}>
+            contact@bostonhacks.io
+          </a>
           or check our sponsor document!
         </Text>
         <a href={sponsor}>

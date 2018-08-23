@@ -142,9 +142,12 @@ class FAQSection extends Component {
                   The event is still a ways away, so check back closer to the
                   hackathon for more information. If you don&#39;t find your
                   question, email us at&nbsp;
-                  <span style={{ color: "#3bb9e3" }}>
+                  <a
+                    href="mailto:contact@bostonhacks.io"
+                    style={{ color: "#3bb9e3" }}
+                  >
                     contact@bostonhacks.io
-                  </span>.
+                  </a>.
                 </FAQHeaderCopy>
               </Col>
             </Row>
