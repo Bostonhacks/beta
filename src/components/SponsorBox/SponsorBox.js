@@ -44,7 +44,7 @@ class SponsorBox extends Component {
           <a href="mailto:contact@bostonhacks.io" style={{ color: "#f05352" }}>
             contact@bostonhacks.io
           </a>
-          or check our sponsor document!
+          &nbsp;or check our sponsor document!
         </Text>
         <a href={sponsor}>
           <DocButton>Learn more</DocButton>
