@@ -79,7 +79,7 @@ export class TracksAndWorkshops extends Component {
         <Grid fluid>
           <Row1>
             <Row className="TracksTitle">
-              <Col md={12} lg={7} align="center">
+              <Col md={12} lg={6} align="center">
                 <img src={gridBlue} className="icons1" />
               </Col>
               <Col md={12} lg={5}>
@@ -93,6 +93,7 @@ export class TracksAndWorkshops extends Component {
                   tracks will be this year!
                 </TracksBody>
               </Col>
+              <Col lg={1} />
             </Row>
           </Row1>
           <Row2>
