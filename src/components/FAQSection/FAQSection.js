@@ -18,7 +18,7 @@ const FAQEntryTitle = styled.div`
 
 const FAQAnswer = styled.div`
   font-family: "Roboto Slab", serif;
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-weight: 300;
   max-width: 13em;
   text-align: left;
@@ -51,6 +51,10 @@ const FAQHeaderCopy = FAQEntryTitle.extend`
 var FaqStyle = {
   display: "flex",
   justifyContent: "center"
+};
+
+var Spacing = {
+  padding: "1.5em"
 };
 
 const Circle = styled.img`
@@ -164,7 +168,7 @@ class FAQSection extends Component {
             </Row>
 
             <Row>
-              <Col xs={12} md={4}>
+              <Col xs={12} md={4} style={Spacing}>
                 <FAQEntryTitle>Where is it?</FAQEntryTitle>
                 <FAQAnswer>
                   <p>
@@ -173,7 +177,7 @@ class FAQSection extends Component {
                   </p>
                 </FAQAnswer>
               </Col>
-              <Col xs={12} md={4}>
+              <Col xs={12} md={4} style={Spacing}>
                 <FAQEntryTitle>Who’s coming?</FAQEntryTitle>
                 <FAQAnswer>
                   <p>
@@ -182,7 +186,7 @@ class FAQSection extends Component {
                   </p>
                 </FAQAnswer>
               </Col>
-              <Col xs={12} md={4}>
+              <Col xs={12} md={4} style={Spacing}>
                 <FAQEntryTitle>Who can attend?</FAQEntryTitle>
                 <FAQAnswer>
                   <p>
@@ -195,7 +199,7 @@ class FAQSection extends Component {
             </Row>
 
             <Row>
-              <Col xs={12} md={4}>
+              <Col xs={12} md={4} style={Spacing}>
                 <FAQEntryTitle>Do I need experience?</FAQEntryTitle>
                 <FAQAnswer>
                   <p>
@@ -206,7 +210,7 @@ class FAQSection extends Component {
                   </p>
                 </FAQAnswer>
               </Col>
-              <Col xs={12} md={4}>
+              <Col xs={12} md={4} style={Spacing}>
                 <FAQEntryTitle>Are there any rules?</FAQEntryTitle>
                 <FAQAnswer>
                   <p>
@@ -216,7 +220,7 @@ class FAQSection extends Component {
                   </p>
                 </FAQAnswer>
               </Col>
-              <Col xs={12} md={4}>
+              <Col xs={12} md={4} style={Spacing}>
                 <FAQEntryTitle>What should I bring?</FAQEntryTitle>
                 <FAQAnswer>
                   <p>
@@ -229,7 +233,7 @@ class FAQSection extends Component {
             </Row>
 
             <Row>
-              <Col xs={12} md={4}>
+              <Col xs={12} md={4} style={Spacing}>
                 <FAQEntryTitle>Can we form teams?</FAQEntryTitle>
                 <FAQAnswer>
                   <p>
@@ -240,7 +244,7 @@ class FAQSection extends Component {
                   </p>
                 </FAQAnswer>
               </Col>
-              <Col xs={12} md={4}>
+              <Col xs={12} md={4} style={Spacing}>
                 <FAQEntryTitle>Does it cost anything?</FAQEntryTitle>
                 <FAQAnswer>
                   <p>
@@ -248,7 +252,7 @@ class FAQSection extends Component {
                   </p>
                 </FAQAnswer>
               </Col>
-              <Col xs={12} md={4}>
+              <Col xs={12} md={4} style={Spacing}>
                 <FAQEntryTitle>
                   Will there be travel reimbursements?
                 </FAQEntryTitle>

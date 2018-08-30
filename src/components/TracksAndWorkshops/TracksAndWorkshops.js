@@ -79,10 +79,10 @@ export class TracksAndWorkshops extends Component {
         <Grid fluid>
           <Row1>
             <Row className="TracksTitle">
-              <Col md={12} lg={7} align="center">
+              <Col md={12} lg={6} align="center">
                 <img src={gridBlue} className="icons1" />
               </Col>
-              <Col md={12} lg={5}>
+              <Col md={12} lg={6}>
                 <TracksTitle> Tracks and Workshops </TracksTitle>
                 <TracksBody>
                   Tracks are optional specialized topics or technologies you can
@@ -108,14 +108,14 @@ export class TracksAndWorkshops extends Component {
               <Col md={12} lg={3}>
                 <TrackName> Web and mobile </TrackName>
                 <TracksCopy>
-                  Led by <b> OpenWeb BU </b>, hackers learned how to make a
+                  Led by <b> OpenWeb BU </b>hackers learned how to make a
                   website or mobile app from the ground up.
                 </TracksCopy>
               </Col>
               <Col md={12} lg={3}>
                 <TrackName> Machine Learning </TrackName>
                 <TracksCopy>
-                  Led by <b> BU’s Machine Intelligence Community </b>, hackers
+                  Led by <b> BU’s Machine Intelligence Community </b>hackers
                   learned how to get into the basics of several ML frameworks,
                   and moved on to more advanced topics.
                 </TracksCopy>
@@ -123,9 +123,9 @@ export class TracksAndWorkshops extends Component {
               <Col xs={10} lg={3}>
                 <TrackName> Virtual Reality </TrackName>
                 <TracksCopy>
-                  Led by <b> BU AR/VR </b>, hackers got a jumpstart into
-                  creating in 3D. Then they created hacks on the Oculus Rifts we
-                  made available to them.
+                  Led by <b> BU AR/VR </b>hackers got a jumpstart into creating
+                  in 3D. Then they created hacks on the Oculus Rifts we made
+                  available to them.
                 </TracksCopy>
               </Col>
             </Row>

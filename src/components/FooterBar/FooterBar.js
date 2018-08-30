@@ -30,7 +30,7 @@ const Align = styled.div`
   width: 100%;
   text-transform: uppercase;
   @media (max-width: 500px) {
-    align-items: baseline;
+    align-items: center;
   }
 `;
 
