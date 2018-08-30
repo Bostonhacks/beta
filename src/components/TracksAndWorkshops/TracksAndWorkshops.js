@@ -5,6 +5,7 @@ import { Grid, Row, Col } from "react-flexbox-grid";
 import gridBlue from "./../../assets/Grids/Sq_grid_Blue.svg";
 import circleBlue from "./../../assets/Circles/Circle_Blue1.svg";
 import triangOrange from "./../../assets/Triangles/Tri_Orng1.svg";
+import orangeGrid from "./../../assets/Grids/Dot Grid_Orng2.svg";
 
 const TracksTitle = styled.p`
   color: #f05352;
@@ -69,13 +70,24 @@ const Row3 = styled.div`
   margin-bottom: 22%;
 `;
 
+const OrangeGrid = styled.img`
+  position: relative;
+  left: 80%;
+  top: 60%;
+  @media (max-width: 500px) {
+    width: 100px;
+  }
+`;
+
 export class TracksAndWorkshops extends Component {
   render() {
     return (
       <div className="TracksAndWorkshops">
         <div className="background-div1" />
         <div className="background-div2" />
-        <div className="background-div3" />
+        <div className="background-div3">
+          <OrangeGrid src={orangeGrid} />
+        </div>
         <Grid fluid>
           <Row1>
             <Row className="TracksTitle">
