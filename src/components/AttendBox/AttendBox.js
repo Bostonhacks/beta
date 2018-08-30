@@ -12,6 +12,9 @@ const EmailField = styled.input`
   @media (max-width: 500px) {
     width: 67%;
   }
+  ::placeholder {
+    font-size: 90%;
+  }
 `;
 
 const Text = styled.div`
