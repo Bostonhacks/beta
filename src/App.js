@@ -41,9 +41,7 @@ class App extends Component {
             </div>
           </div>
 
-          <div>
-            <FooterBar />
-          </div>
+          <FooterBar />
         </div>
       </div>
     );

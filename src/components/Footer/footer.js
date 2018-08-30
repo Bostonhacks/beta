@@ -12,6 +12,7 @@ import twilio from "../../assets/SponsorLogos/Twilio/twilioLogo.png";
 import google from "../../assets/SponsorLogos/Google/googleLogo.png";
 import giphy from "../../assets/SponsorLogos/Giphy/giphyEngineeringLogo.jpg";
 import liberty from "../../assets/SponsorLogos/Liberty/libertyLogo.png";
+import itg from "../../assets/SponsorLogos/ITG/itgLogo.png";
 
 const Text = styled.div`
   font-family: "Roboto", sans-serif;
@@ -34,8 +35,8 @@ const Logo = styled.img`
   object-fit: contain;
   transition-duration: 0.3s;
 
-  @media (max-width: 500px) {
-    margin-top: 4vh;
+  @media (max-width: 768px) {
+    padding-top: 4vh;
   }
 
   &:hover {
@@ -127,7 +128,15 @@ export class Footer extends Component {
               <Logo style={LargeLogo} src={liberty} />
             </a>
           </Col>
+          <Col xs={12} md={4} style={centerTable}>
+            <a href="https://www.itg.com" style={{ verticalAlign: "baseline" }}>
+              <Logo style={LargeLogo} src={itg} />
+            </a>
+          </Col>
         </Row>
+        <br />
+        <br />
+        <br />
       </div>
     );
   }
