@@ -3,13 +3,13 @@ import React, { Component } from "react";
 import {
   AttendAndSponsorBoxes,
   EventSchedule,
+  Navbar,
   FAQSection,
+  HeroText,
   TracksAndWorkshops,
-  Footer
+  Footer,
+  FooterBar
 } from "./components";
-// import { Header } from "./components/Header/Header";
-import HeroText from "./components/HeroText";
-import { FooterBar } from "./components/FooterBar/footerbar";
 
 class App extends Component {
   render() {
@@ -17,15 +17,14 @@ class App extends Component {
       <div>
         <a name="top" />
         <div className="App">
-          <div className="Flair">
-            <div className="headerbar">
-              <HeroText
-                title="Boston"
-                titleBold="Hacks"
-                date="November 10th - November 11th"
-                location="Boston University"
-              />
-            </div>
+          <Navbar />
+          <div className="headerbar">
+            <HeroText
+              title="Boston"
+              titleBold="Hacks"
+              date="November 10th - November 11th"
+              location="Boston University"
+            />
           </div>
 
           <AttendAndSponsorBoxes />

@@ -5,6 +5,7 @@ import { Grid, Row, Col } from "react-flexbox-grid";
 import logoFooter from "../../assets/Logos/Logo-Small_footer.svg";
 import facebook from "../../assets/Logos/fb.svg";
 import twitter from "../../assets/Logos/Twitter.svg";
+import mlhCode from "../../documents/mlh-code-of-conduct.pdf";
 
 const Text = styled.div`
   font-family: "Roboto", sans-serif;
@@ -12,7 +13,6 @@ const Text = styled.div`
   font-size: 2vh;
   color: #ffffff;
   display: flex;
-  margin-bottom: 10%;
 `;
 
 const Bar = styled.div`
@@ -25,13 +25,17 @@ const Bar = styled.div`
 const Align = styled.div`
   display: flex;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-content: flex-end;
+  align-items: center;
   width: 100%;
   text-transform: uppercase;
+  @media (max-width: 500px) {
+    align-items: baseline;
+  }
 `;
 
 const Spacer = {
-  marginRight: "2vh"
+  marginRight: "3vh"
 };
 
 export class FooterBar extends Component {
@@ -42,18 +46,24 @@ export class FooterBar extends Component {
           <Row>
             <Align>
               <Col style={Spacer}>
-                <img src={logoFooter} style={{ height: "5vh" }} />
+                <img src={logoFooter} style={{ height: "1.6em" }} />
               </Col>
-              <Col style={Spacer}>
+              <Col style={Spacer} className="hidden-xs">
                 <a href="https://www.facebook.com/bostonhacks/">
                   <img src={facebook} />
                 </a>
               </Col>
 
-              <Col style={Spacer}>
+              <Col style={Spacer} className="hidden-xs">
                 <a href="https://twitter.com/boston_hacks">
                   <img src={twitter} />
                 </a>
+              </Col>
+
+              <Col style={Spacer}>
+                <Text>
+                  <a href={mlhCode}>MLH Code of Conduct</a>
+                </Text>
               </Col>
 
               <Col>
