@@ -134,9 +134,6 @@ export class Footer extends Component {
             </a>
           </Col>
         </Row>
-        <br />
-        <br />
-        <br />
       </div>
     );
   }
