@@ -1,10 +1,9 @@
 import React, { Component, Fragment } from "react";
 import styled from "styled-components";
-
-import sponsor from "./../../documents/BostonHacks_Sponsorship_V3.pdf";
+import sponsor from "./../../documents/BostonHacks_Sponsorship_Fall_2018.pdf";
 
 const DocButton = styled.button`
-  background-color: #ef9b75;
+  background-color: #f05352;
 `;
 
 const Text = styled.div`
@@ -40,12 +39,15 @@ class SponsorBox extends Component {
       <Fragment>
         <Title>Sponsor</Title>
         <Text>
-          We would love to have you on board. Contact us or check our sponsor
-          document!
+          We would love to have you on board. Contact us at&nbsp;
+          <a href="mailto:contact@bostonhacks.io" style={{ color: "#f05352" }}>
+            contact@bostonhacks.io
+          </a>
+          or check our sponsor document!
         </Text>
-        <DocButton>
-          <a href={sponsor}>Learn more</a>
-        </DocButton>
+        <a href={sponsor}>
+          <DocButton>Learn more</DocButton>
+        </a>
       </Fragment>
     );
   }

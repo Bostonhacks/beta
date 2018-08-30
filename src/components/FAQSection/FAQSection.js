@@ -6,6 +6,7 @@ import greenZig from "../../assets/ZigZags/Line_Green1.svg";
 import redTrian from "../../assets/Triangles/Triangle_Pink2.svg";
 import grid from "../../assets/Grids/Sq_grid_Blue.svg";
 import circle from "../../assets/Circles/Half_Circle_Orng.svg";
+import mlhCode from "../../documents/mlh-code-of-conduct.pdf";
 
 const FAQEntryTitle = styled.div`
   margin-bottom: -10px;
@@ -21,6 +22,15 @@ const FAQAnswer = styled.div`
   font-weight: 300;
   max-width: 13em;
   text-align: left;
+
+  p {
+    a {
+      color: #f05352;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
 `;
 
 const FAQHeader = FAQEntryTitle.extend`
@@ -30,8 +40,8 @@ const FAQHeader = FAQEntryTitle.extend`
 `;
 
 const FAQHeaderCopy = FAQEntryTitle.extend`
-  font-size: 1.4em;
-  font-weight: 500;
+  font-size: 1.2em;
+  font-weight: 400;
   color: #000000;
   font-family: "Roboto Slab", serif;
   max-width: 65%;
@@ -140,7 +150,15 @@ class FAQSection extends Component {
                 <FAQHeader> Frequently Asked Questions </FAQHeader>
                 <FAQHeaderCopy>
                   The event is still a ways away, so check back closer to the
-                  hackathon for more information.
+                  hackathon for more information. If you don&#39;t find your
+                  question, email us at&nbsp;
+                  <a
+                    href="mailto:contact@bostonhacks.io"
+                    style={{ color: "#3bb9e3" }}
+                  >
+                    contact@bostonhacks.io
+                  </a>
+                  .
                 </FAQHeaderCopy>
               </Col>
             </Row>
@@ -159,7 +177,7 @@ class FAQSection extends Component {
                 <FAQEntryTitle>Who’s coming?</FAQEntryTitle>
                 <FAQAnswer>
                   <p>
-                    We expect 400 to 450 hackers from all over North America to
+                    We expect 450 to 500 hackers from all over North America to
                     attend BostonHacks.
                   </p>
                 </FAQAnswer>
@@ -193,7 +211,8 @@ class FAQSection extends Component {
                 <FAQAnswer>
                   <p>
                     We want to ensure a positive experience for all
-                    participants. We encourage you to read the Code of Conduct.
+                    participants. We encourage you to read the{" "}
+                    <a href={mlhCode}>Code of Conduct</a>.
                   </p>
                 </FAQAnswer>
               </Col>
