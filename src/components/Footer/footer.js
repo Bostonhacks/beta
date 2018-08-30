@@ -34,6 +34,10 @@ const Logo = styled.img`
   object-fit: contain;
   transition-duration: 0.3s;
 
+  @media (max-width: 500px) {
+    margin-top: 4vh;
+  }
+
   &:hover {
     transform: scale(1.05);
   }
