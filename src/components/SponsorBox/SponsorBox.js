@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from "react";
 import styled from "styled-components";
-
 import sponsor from "./../../documents/BostonHacks_Sponsorship_Fall_2018.pdf";
 
 const DocButton = styled.button`

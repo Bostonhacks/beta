@@ -64,8 +64,8 @@ class AttendBox extends Component {
         <Title>Attend</Title>
         <Text>
           Thanks for the interest! Leave your email address below or follow us
-          on social media to get notified when there is more information and
-          registration opens!
+          on social media to get notified when there’s more information and
+          registrations opens!
         </Text>
         <div>
           <form
@@ -86,7 +86,7 @@ class AttendBox extends Component {
                   onChange={this.handleChange}
                   className="email form-control"
                   id="mce-EMAIL"
-                  placeholder="hacker@anyschool.edu"
+                  placeholder="email address..."
                   required
                 />
               </Col>
