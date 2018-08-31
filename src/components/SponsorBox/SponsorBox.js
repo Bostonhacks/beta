@@ -39,12 +39,12 @@ class SponsorBox extends Component {
     return (
       <Fragment>
         <Title>Sponsor</Title>
+        {/* prettier-ignore */}
         <Text>
           We would love to have you on board. Contact us at&nbsp;
           <a href="mailto:contact@bostonhacks.io" style={{ color: "#f05352" }}>
             contact@bostonhacks.io
-          </a>
-          &nbsp;or check our sponsor document!
+          </a> or check our sponsor document!
         </Text>
         <a href={sponsor}>
           <DocButton>Learn more</DocButton>
