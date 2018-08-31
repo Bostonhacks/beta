@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Helmet } from "react-helmet";
 
 import {
   AttendAndSponsorBoxes,
@@ -15,6 +16,15 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Helmet>
+          <link rel="canonical" href="https://bostonhacks.io/" />
+          <meta itemProp="name" content="BostonHacks - November 10th & 11th" />
+          <meta
+            itemProp="description"
+            content="BostonHacks is Boston University's premier hackathon hosting 500 student from all over the US and Canada."
+          />
+        </Helmet>
+
         <a name="top" />
         <div className="App">
           <Navbar />
