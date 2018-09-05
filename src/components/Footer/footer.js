@@ -8,10 +8,11 @@ import zig from "../../assets/ZigZags/Line_Orng2.svg";
 
 // import logoFooter from "../../assets/Logos/Logo-Small_footer.svg";
 
-import twillio from "../../assets/SponsorLogos/Twillio/twillioRed.png";
-import google from "../../assets/SponsorLogos/Google/google.png";
-import giphy from "../../assets/SponsorLogos/Giphy/giphyIcon.png";
+import twilio from "../../assets/SponsorLogos/Twilio/twilioLogo.png";
+import google from "../../assets/SponsorLogos/Google/googleLogo.png";
+import giphy from "../../assets/SponsorLogos/Giphy/giphyEngineeringLogo.jpg";
 import liberty from "../../assets/SponsorLogos/Liberty/libertyLogo.png";
+import itg from "../../assets/SponsorLogos/ITG/itgLogo.png";
 
 const Text = styled.div`
   font-family: "Roboto", sans-serif;
@@ -28,16 +29,26 @@ const Text = styled.div`
   }
 `;
 
-const Logo = {
-  maxHeight: "8vh",
-  maxWidth: "100%",
-  objectFit: "contain",
-  marginTop: "4vh"
-};
+const Logo = styled.img`
+  max-height: 8vh;
+  max-width: 100%;
+  object-fit: contain;
+  transition-duration: 0.3s;
 
-const Liber = {
-  height: "17vh",
-  maxWidth: "100%"
+  @media (max-width: 768px) {
+    padding-top: 4vh;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+`;
+
+const LargeLogo = {
+  maxHeight: "14vh",
+  height: "14vh",
+  maxWidth: "100%",
+  verticalAlign: "baseline"
 };
 
 const centerTable = {
@@ -86,16 +97,41 @@ export class Footer extends Component {
 
         <Row style={centerTable}>
           <Col xs={12} md={4} style={centerTable}>
-            <img style={Logo} src={twillio} />
+            <a
+              href="https://www.twilio.com"
+              style={{ verticalAlign: "baseline" }}
+            >
+              <Logo src={twilio} />
+            </a>
           </Col>
           <Col xs={12} md={4} style={centerTable}>
-            <img style={Logo} src={google} />
+            <a
+              href="https://www.google.com"
+              style={{ verticalAlign: "baseline" }}
+            >
+              <Logo src={google} />
+            </a>
           </Col>
           <Col xs={12} md={4} style={centerTable}>
-            <img style={Logo} src={giphy} />
+            <a
+              href="https://engineering.giphy.com"
+              style={{ verticalAlign: "baseline" }}
+            >
+              <Logo style={LargeLogo} src={giphy} />
+            </a>
           </Col>
           <Col xs={12} md={4} style={centerTable}>
-            <img style={Liber} src={liberty} />
+            <a
+              href="https://www.libertymutual.com"
+              style={{ verticalAlign: "baseline" }}
+            >
+              <Logo style={LargeLogo} src={liberty} />
+            </a>
+          </Col>
+          <Col xs={12} md={4} style={centerTable}>
+            <a href="https://www.itg.com" style={{ verticalAlign: "baseline" }}>
+              <Logo style={LargeLogo} src={itg} />
+            </a>
           </Col>
         </Row>
       </div>
