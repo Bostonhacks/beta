@@ -120,24 +120,25 @@ export class TracksAndWorkshops extends Component {
               <Col md={12} lg={3}>
                 <TrackName> Web and mobile </TrackName>
                 <TracksCopy>
-                  Led by <b> OpenWeb BU </b>hackers learned how to make a
-                  website or mobile app from the ground up.
+                  Led by <b> OpenWeb BU </b>
+                  hackers learned how to make a website or mobile app from the
+                  ground up.
                 </TracksCopy>
               </Col>
               <Col md={12} lg={3}>
                 <TrackName> Machine Learning </TrackName>
                 <TracksCopy>
-                  Led by <b> BU’s Machine Intelligence Community </b>hackers
-                  learned how to get into the basics of several ML frameworks,
-                  and moved on to more advanced topics.
+                  Led by <b> BU’s Machine Intelligence Community </b>
+                  hackers learned how to get into the basics of several ML
+                  frameworks, and moved on to more advanced topics.
                 </TracksCopy>
               </Col>
               <Col xs={10} lg={3}>
                 <TrackName> Virtual Reality </TrackName>
                 <TracksCopy>
-                  Led by <b> BU AR/VR </b>hackers got a jumpstart into creating
-                  in 3D. Then they created hacks on the Oculus Rifts we made
-                  available to them.
+                  Led by <b> BU AR/VR </b>
+                  hackers got a jumpstart into creating in 3D. Then they created
+                  hacks on the Oculus Rifts we made available to them.
                 </TracksCopy>
               </Col>
             </Row>
