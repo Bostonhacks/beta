@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from "react";
 import styled from "styled-components";
-
 import sponsor from "./../../documents/BostonHacks_Sponsorship_Fall_2018.pdf";
 
 const DocButton = styled.button`
@@ -39,12 +38,12 @@ class SponsorBox extends Component {
     return (
       <Fragment>
         <Title>Sponsor</Title>
-        {/* prettier-ignore */}
         <Text>
           We would love to have you on board. Contact us at&nbsp;
           <a href="mailto:contact@bostonhacks.io" style={{ color: "#f05352" }}>
-            contact@bostonhacks.io
-          </a> or check our sponsor document!
+            contact@bostonhacks.io{" "}
+          </a>
+          or check our sponsor document!
         </Text>
         <a href={sponsor}>
           <DocButton>Learn more</DocButton>
