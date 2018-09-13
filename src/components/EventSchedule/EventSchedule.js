@@ -20,7 +20,7 @@ const eventsSat = [
 const eventsSun = [
   { time: "7:00 AM", name: "Breakfast" },
   { time: "11:00 AM", name: "Submissions due" },
-  { time: "11:00 PM", name: "Lunch" },
+  { time: "11:00 AM", name: "Lunch" },
   { time: "12:00 PM", name: "Judging expo" },
   { time: "2:00 PM", name: "Closing ceremony" }
 ];

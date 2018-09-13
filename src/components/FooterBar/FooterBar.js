@@ -25,11 +25,11 @@ const Align = styled.div`
   display: flex;
   justify-content: flex-start;
   align-content: flex-end;
-  align-items: center;
+  align-items: flex-end;
   width: 100%;
   text-transform: uppercase;
   @media (max-width: 500px) {
-    align-items: baseline;
+    align-items: center;
   }
 `;
 
