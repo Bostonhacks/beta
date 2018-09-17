@@ -39,7 +39,7 @@ const Wrapper = styled.div`
   }
 
   div.right {
-    margin-right: 20vw;
+    margin-right: 160px;
     display: flex;
     align-items: center;
     a {

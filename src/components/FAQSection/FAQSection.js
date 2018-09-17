@@ -216,7 +216,10 @@ class FAQSection extends Component {
                   <p>
                     We want to ensure a positive experience for all
                     participants. We encourage you to read the{" "}
-                    <a href={mlhCode}>Code of Conduct</a>.
+                    <a href={mlhCode} style={{ color: "#3bb9e3" }}>
+                      Code of Conduct
+                    </a>
+                    .
                   </p>
                 </FAQAnswer>
               </Col>
