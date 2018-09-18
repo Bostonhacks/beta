@@ -51,7 +51,7 @@ class AttendBox extends Component {
           <br />
           Registration will close on October 15th, 11:59pm EST!
         </Text>
-        <a href="">
+        <a href="https://my.bostonhacks.io">
           <SubscribeButton className="button btn btn-outline-danger">
             Register
           </SubscribeButton>
