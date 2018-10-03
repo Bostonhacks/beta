@@ -100,9 +100,8 @@ class App extends Component {
             <div className="footer">
               <Footer />
             </div>
+            <FooterBar />
           </div>
-
-          <FooterBar />
         </div>
       </div>
     );

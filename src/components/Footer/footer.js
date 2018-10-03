@@ -95,7 +95,13 @@ export class Footer extends Component {
             <Zag src={zig} />
           </Col>
         </Row>
-        <Row style={centerTable}>
+        <Row
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "5vh"
+          }}
+        >
           <Text>Thank you to our sponsors!</Text>
         </Row>
 

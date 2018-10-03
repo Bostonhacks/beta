@@ -16,9 +16,10 @@ const Text = styled.div`
 
 const Bar = styled.div`
   background-color: #2a2563;
-  margin-top: -1vh;
+  margin-top: 1vh;
   width: 100%;
   padding: 2vw 0 2vw 0;
+  align-items: flex-end;
 `;
 
 const Align = styled.div`
