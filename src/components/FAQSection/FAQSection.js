@@ -261,9 +261,9 @@ class FAQSection extends Component {
                 </FAQEntryTitle>
                 <FAQAnswer>
                   <p>
-                    We’re handling travel reimbursements on a case-by-case
-                    basis. We’re also working on potentially providing busses to
-                    regions like New York and Canada.
+                    Unfortunetly we’re not providing individual travel
+                    reimbursements this year. However, we will be providing
+                    buses to NYC, Toronto and Montereal.
                   </p>
                 </FAQAnswer>
               </Col>
