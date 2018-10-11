@@ -16,6 +16,7 @@ import itg from "../../assets/SponsorLogos/ITG/itgLogo.png";
 import spark from "../../assets/SponsorLogos/Spark/SparkLogo.png";
 import raytheon from "../../assets/SponsorLogos/Raytheon/raytheonLogo.png";
 import bucs from "../../assets/SponsorLogos/BUCS/BucsLogo.jpg";
+import mule from "../../assets/SponsorLogos/StickerMule/StickerMuleLogo.svg";
 
 const Text = styled.div`
   font-family: "Roboto", sans-serif;
@@ -166,6 +167,14 @@ export class Footer extends Component {
               style={{ verticalAlign: "baseline" }}
             >
               <Logo src={raytheon} />
+            </a>
+          </Col>
+          <Col xs={12} md={4} style={centerTable}>
+            <a
+              href="http://hackp.ac/mlh-stickermule-hackathons"
+              style={{ verticalAlign: "baseline" }}
+            >
+              <Logo style={LargeLogo} src={mule} />
             </a>
           </Col>
         </Row>
