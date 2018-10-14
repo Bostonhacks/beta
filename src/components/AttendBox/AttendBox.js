@@ -49,7 +49,7 @@ class AttendBox extends Component {
         <Text>
           Join us for this year&apos;s BostonHacks!
           <br />
-          Registration will close on October 15th, 11:59pm EST!
+          Registration will close on October 19th, 11:59pm EST!
         </Text>
         <a href="https://my.bostonhacks.io">
           <SubscribeButton className="button btn btn-outline-danger">
