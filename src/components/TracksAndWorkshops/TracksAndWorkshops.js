@@ -39,14 +39,21 @@ const TrackName = styled.p`
   font-weight: 400;
   font-size: 1.75em;
   color: #ffffff;
+  min-height: 74px;
+  margin-bottom: 0;
   @media (max-width: 500px) {
     font-size: 1em;
+    min-height: 37px;
+  }
+  @media (max-width: 1075px) and (min-width: 992px) {
+    margin-bottom: 10%;
   }
 `;
 
 const TracksCopy = TracksBody.extend`
   font-size: 1.2em;
   font-weight: 300;
+  margin-top: 0;
   @media (max-width: 500px) {
     font-size: 12.5px;
   }

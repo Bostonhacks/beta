@@ -83,7 +83,7 @@ class App extends Component {
             <HeroText
               title="Boston"
               titleBold="Hacks"
-              date="November 10th - November 11th"
+              date="November 10th&ndash;November 11th"
               location="Boston University"
             />
           </div>

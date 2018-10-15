@@ -76,10 +76,12 @@ const Loc = styled.h3`
   @media (max-width: 500px) {
     font-size: 0.875em;
   }
+  padding-top: 1%;
 `;
 
 const Date = Loc.extend`
   line-height: 0%;
+  padding-top: 3%;
 `;
 
 var Header = {
