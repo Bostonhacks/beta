@@ -13,6 +13,10 @@ import google from "../../assets/SponsorLogos/Google/googleLogo.png";
 import giphy from "../../assets/SponsorLogos/Giphy/giphyEngineeringLogo.jpg";
 import liberty from "../../assets/SponsorLogos/Liberty/libertyLogo.png";
 import itg from "../../assets/SponsorLogos/ITG/itgLogo.png";
+import spark from "../../assets/SponsorLogos/Spark/SparkLogo.png";
+import raytheon from "../../assets/SponsorLogos/Raytheon/raytheonLogo.png";
+import bucs from "../../assets/SponsorLogos/BUCS/BucsLogo.jpg";
+import mule from "../../assets/SponsorLogos/StickerMule/StickerMuleLogo.svg";
 
 const Text = styled.div`
   font-family: "Roboto", sans-serif;
@@ -54,7 +58,8 @@ const LargeLogo = {
 const centerTable = {
   display: "flex",
   justifyContent: "center",
-  flexWrap: "wrap"
+  flexWrap: "wrap",
+  alignItems: "center"
 };
 
 const Cir = styled.img`
@@ -91,7 +96,13 @@ export class Footer extends Component {
             <Zag src={zig} />
           </Col>
         </Row>
-        <Row style={centerTable}>
+        <Row
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "5vh"
+          }}
+        >
           <Text>Thank you to our sponsors!</Text>
         </Row>
 
@@ -120,6 +131,20 @@ export class Footer extends Component {
               <Logo style={LargeLogo} src={giphy} />
             </a>
           </Col>
+
+          <Col xs={12} md={4} style={centerTable}>
+            <a href="https://www.itg.com" style={{ verticalAlign: "baseline" }}>
+              <Logo style={LargeLogo} src={itg} />
+            </a>
+          </Col>
+          <Col xs={12} md={4} style={centerTable}>
+            <a
+              href="http://www.bu.edu/spark/"
+              style={{ verticalAlign: "baseline" }}
+            >
+              <Logo style={LargeLogo} src={spark} />
+            </a>
+          </Col>
           <Col xs={12} md={4} style={centerTable}>
             <a
               href="https://www.libertymutual.com"
@@ -129,8 +154,27 @@ export class Footer extends Component {
             </a>
           </Col>
           <Col xs={12} md={4} style={centerTable}>
-            <a href="https://www.itg.com" style={{ verticalAlign: "baseline" }}>
-              <Logo style={LargeLogo} src={itg} />
+            <a
+              href="https://www.bu.edu/cs/"
+              style={{ verticalAlign: "baseline" }}
+            >
+              <Logo style={LargeLogo} src={bucs} />
+            </a>
+          </Col>
+          <Col xs={12} md={4} style={centerTable}>
+            <a
+              href="https://www.raytheon.com"
+              style={{ verticalAlign: "baseline" }}
+            >
+              <Logo src={raytheon} />
+            </a>
+          </Col>
+          <Col xs={12} md={4} style={centerTable}>
+            <a
+              href="http://hackp.ac/mlh-stickermule-hackathons"
+              style={{ verticalAlign: "baseline" }}
+            >
+              <Logo style={LargeLogo} src={mule} />
             </a>
           </Col>
         </Row>
