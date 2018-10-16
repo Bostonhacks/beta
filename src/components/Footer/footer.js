@@ -17,6 +17,7 @@ import spark from "../../assets/SponsorLogos/Spark/SparkLogo.png";
 import raytheon from "../../assets/SponsorLogos/Raytheon/raytheonLogo.png";
 import bucs from "../../assets/SponsorLogos/BUCS/BucsLogo.jpg";
 import mule from "../../assets/SponsorLogos/StickerMule/StickerMuleLogo.svg";
+import bose from "../../assets/SponsorLogos/Bose/BoseLogo.png";
 
 const Text = styled.div`
   font-family: "Roboto", sans-serif;
@@ -175,6 +176,14 @@ export class Footer extends Component {
               style={{ verticalAlign: "baseline" }}
             >
               <Logo style={LargeLogo} src={mule} />
+            </a>
+          </Col>
+          <Col xs={12} md={4} style={centerTable}>
+            <a
+              href="https://www.bose.com/"
+              style={{ verticalAlign: "baseline" }}
+            >
+              <Logo src={bose} />
             </a>
           </Col>
         </Row>
