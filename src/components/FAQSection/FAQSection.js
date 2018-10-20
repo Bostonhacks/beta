@@ -261,9 +261,9 @@ class FAQSection extends Component {
                 </FAQEntryTitle>
                 <FAQAnswer>
                   <p>
-                    Unfortunetly we’re not providing individual travel
+                    Unfortunately we’re not providing individual travel
                     reimbursements this year. However, we will be providing
-                    buses to NYC, Toronto and Montereal.
+                    buses to NYC, Toronto and Montreal.
                   </p>
                 </FAQAnswer>
               </Col>
