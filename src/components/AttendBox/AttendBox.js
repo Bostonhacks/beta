@@ -47,13 +47,13 @@ class AttendBox extends Component {
       <Fragment>
         <Title>Register</Title>
         <Text>
-          Join us for this year&apos;s BostonHacks!
-          <br />
-          Registration will close on October 19th, 11:59pm EST!
+          Thank you for your interest! Unfortunately registration is closed. If
+          you applied, you can check your application status at the Registration
+          Portal.
         </Text>
         <a href="https://my.bostonhacks.io">
           <SubscribeButton className="button btn btn-outline-danger">
-            Register
+            Registration Portal
           </SubscribeButton>
         </a>
       </Fragment>
