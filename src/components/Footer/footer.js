@@ -18,6 +18,11 @@ import raytheon from "../../assets/SponsorLogos/Raytheon/raytheonLogo.png";
 import bucs from "../../assets/SponsorLogos/BUCS/BucsLogo.jpg";
 import mule from "../../assets/SponsorLogos/StickerMule/StickerMuleLogo.svg";
 import bose from "../../assets/SponsorLogos/Bose/BoseLogo.png";
+import github from "../../assets/SponsorLogos/Github/githubLogo.png";
+import onedb from "../../assets/SponsorLogos/OneDB/onedbLogo.svg";
+import redhat from "../../assets/SponsorLogos/RedHat/redhatLogo.png";
+import stratis from "../../assets/SponsorLogos/Stratis/StratisLogo.png";
+import unity from "../../assets/SponsorLogos/Unity/unityWhiteLogo.png";
 
 const Text = styled.div`
   font-family: "Roboto", sans-serif;
@@ -184,6 +189,40 @@ export class Footer extends Component {
               style={{ verticalAlign: "baseline" }}
             >
               <Logo src={bose} />
+            </a>
+          </Col>
+          <Col xs={12} md={4} style={centerTable}>
+            <a href="https://github.com/" style={{ verticalAlign: "baseline" }}>
+              <Logo style={LargeLogo} src={github} />
+            </a>
+          </Col>
+          <Col xs={12} md={4} style={centerTable}>
+            <a
+              href="https://www.redhat.com/en"
+              style={{ verticalAlign: "baseline" }}
+            >
+              <Logo src={redhat} />
+            </a>
+          </Col>
+          <Col xs={12} md={4} style={centerTable}>
+            <a
+              href="https://stratisplatform.com/"
+              style={{ verticalAlign: "baseline" }}
+            >
+              <Logo style={LargeLogo} src={stratis} />
+            </a>
+          </Col>
+          <Col xs={12} md={4} style={centerTable}>
+            <a
+              href="https://unity3d.com/"
+              style={{ verticalAlign: "baseline" }}
+            >
+              <Logo style={LargeLogo} src={unity} />
+            </a>
+          </Col>
+          <Col xs={12} md={4} style={centerTable}>
+            <a href="" style={{ verticalAlign: "baseline" }}>
+              <Logo src={onedb} />
             </a>
           </Col>
         </Row>
