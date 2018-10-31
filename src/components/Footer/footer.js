@@ -12,7 +12,7 @@ import twilio from "../../assets/SponsorLogos/Twilio/twilioLogo.png";
 import google from "../../assets/SponsorLogos/Google/googleLogo.png";
 import giphy from "../../assets/SponsorLogos/Giphy/giphyEngineeringLogo.jpg";
 import liberty from "../../assets/SponsorLogos/Liberty/libertyLogo.png";
-import itg from "../../assets/SponsorLogos/ITG/itgLogo.png";
+import itg from "../../assets/SponsorLogos/ITG/itgWhiteLogo.png";
 import spark from "../../assets/SponsorLogos/Spark/SparkLogo.png";
 import raytheon from "../../assets/SponsorLogos/Raytheon/raytheonLogo.png";
 import bucs from "../../assets/SponsorLogos/BUCS/BucsLogo.jpg";
@@ -23,6 +23,8 @@ import onedb from "../../assets/SponsorLogos/OneDB/onedbLogo.svg";
 import redhat from "../../assets/SponsorLogos/RedHat/redhatLogo.png";
 import stratis from "../../assets/SponsorLogos/Stratis/StratisLogo.png";
 import unity from "../../assets/SponsorLogos/Unity/unityWhiteLogo.png";
+import unirobo from "../../assets/SponsorLogos/UniRobot/uniRobotsLogo.png";
+import massrobo from "../../assets/SponsorLogos/MassRobotics/massRoboLogo.png";
 
 const Text = styled.div`
   font-family: "Roboto", sans-serif;
@@ -223,6 +225,22 @@ export class Footer extends Component {
           <Col xs={12} md={4} style={centerTable}>
             <a href="" style={{ verticalAlign: "baseline" }}>
               <Logo src={onedb} />
+            </a>
+          </Col>
+          <Col xs={12} md={4} style={centerTable}>
+            <a
+              href="https:/www.universal-robots.com/"
+              style={{ verticalAlign: "baseline" }}
+            >
+              <Logo src={unirobo} />
+            </a>
+          </Col>
+          <Col xs={12} md={4} style={centerTable}>
+            <a
+              href="https://www.massrobotics.org/"
+              style={{ verticalAlign: "baseline" }}
+            >
+              <Logo src={massrobo} />
             </a>
           </Col>
         </Row>
