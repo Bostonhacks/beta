@@ -229,7 +229,7 @@ export class Footer extends Component {
           </Col>
           <Col xs={12} md={4} style={centerTable}>
             <a
-              href="https:/www.universal-robots.com/"
+              href="https://www.universal-robots.com/"
               style={{ verticalAlign: "baseline" }}
             >
               <Logo src={unirobo} />
