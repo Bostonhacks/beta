@@ -216,7 +216,10 @@ class FAQSection extends Component {
                   <p>
                     We want to ensure a positive experience for all
                     participants. We encourage you to read the{" "}
-                    <a href={mlhCode}>Code of Conduct</a>.
+                    <a href={mlhCode} style={{ color: "#3bb9e3" }}>
+                      Code of Conduct
+                    </a>
+                    .
                   </p>
                 </FAQAnswer>
               </Col>
@@ -258,9 +261,9 @@ class FAQSection extends Component {
                 </FAQEntryTitle>
                 <FAQAnswer>
                   <p>
-                    We’re handling travel reimbursements on a case-by-case
-                    basis. We’re also working on potentially providing busses to
-                    regions like New York and Canada.
+                    Unfortunately we’re not providing individual travel
+                    reimbursements this year. However, we will be providing
+                    buses to NYC, Toronto and Montreal.
                   </p>
                 </FAQAnswer>
               </Col>

@@ -62,15 +62,16 @@ input, textarea{
 .footerFlair {
   background: url("assets/Waves/FooterCurve.svg") no-repeat;
   background-size: cover;
-  height: 90vh;
+  height: 100%;
+  padding-top: 10vh;
 }
 
 .footer {
   display:flex;
   align-items: center;
   justify-content: center;
-  margin-top: 10vh;
-  height: 91vh;
+  margin-top: 5vh;
+  height: 100%;
   width: 100%;
 }
 

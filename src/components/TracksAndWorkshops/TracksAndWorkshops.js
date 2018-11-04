@@ -39,14 +39,21 @@ const TrackName = styled.p`
   font-weight: 400;
   font-size: 1.75em;
   color: #ffffff;
+  min-height: 74px;
+  margin-bottom: 0;
   @media (max-width: 500px) {
     font-size: 1em;
+    min-height: 37px;
+  }
+  @media (max-width: 1075px) and (min-width: 992px) {
+    margin-bottom: 10%;
   }
 `;
 
 const TracksCopy = TracksBody.extend`
   font-size: 1.2em;
   font-weight: 300;
+  margin-top: 0;
   @media (max-width: 500px) {
     font-size: 12.5px;
   }
@@ -105,12 +112,13 @@ export class TracksAndWorkshops extends Component {
                   tracks will be this year!
                 </TracksBody>
               </Col>
+              <Col lg={1} />
             </Row>
           </Row1>
           <Row2>
             <Row>
               <Col md={6} lg={9}>
-                <LastYear> Last year&apos;s tracks: </LastYear>
+                <LastYear> This year&apos;s tracks: </LastYear>
               </Col>
               <Col md={6} lg={3} align="center">
                 <img src={circleBlue} className="icons1" />
@@ -118,26 +126,30 @@ export class TracksAndWorkshops extends Component {
             </Row>
             <Row>
               <Col md={12} lg={3}>
-                <TrackName> Web and mobile </TrackName>
+                <TrackName> Giving Back to Veterans </TrackName>
                 <TracksCopy>
-                  Led by <b> OpenWeb BU </b>hackers learned how to make a
-                  website or mobile app from the ground up.
+                  Veterans risked their lives to let you sit in the comfort of
+                  your home, or at BostonHacks, and code. It’s time to give back
+                  and create solutions for problems countless veterans face
+                  every day.
                 </TracksCopy>
               </Col>
               <Col md={12} lg={3}>
-                <TrackName> Machine Learning </TrackName>
+                <TrackName> The Smart Home </TrackName>
                 <TracksCopy>
-                  Led by <b> BU’s Machine Intelligence Community </b>hackers
-                  learned how to get into the basics of several ML frameworks,
-                  and moved on to more advanced topics.
+                  Learn how to create Internet of Things devices and robots to
+                  realize the dream of the smart home. Get your hands on state-
+                  of-the-art hardware and study the intimate interaction of
+                  humans and technology.
                 </TracksCopy>
               </Col>
               <Col xs={10} lg={3}>
-                <TrackName> Virtual Reality </TrackName>
+                <TrackName> Data for Urban Good </TrackName>
                 <TracksCopy>
-                  Led by <b> BU AR/VR </b>hackers got a jumpstart into creating
-                  in 3D. Then they created hacks on the Oculus Rifts we made
-                  available to them.
+                  Your hometown works every day to improve the quality of life
+                  for its residents. Help out your local city/town by utilizing
+                  their robust datasets and collecting insights for urban
+                  improvements.
                 </TracksCopy>
               </Col>
             </Row>
