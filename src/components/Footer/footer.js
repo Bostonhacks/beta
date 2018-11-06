@@ -25,6 +25,7 @@ import stratis from "../../assets/SponsorLogos/Stratis/StratisLogo.png";
 import unity from "../../assets/SponsorLogos/Unity/unityWhiteLogo.png";
 import unirobo from "../../assets/SponsorLogos/UniRobot/uniRobotsLogo.png";
 import massrobo from "../../assets/SponsorLogos/MassRobotics/massRoboLogo.png";
+import ibm from "../../assets/SponsorLogos/Ibm/ibmLogo.png";
 
 const Text = styled.div`
   font-family: "Roboto", sans-serif;
@@ -241,6 +242,14 @@ export class Footer extends Component {
               style={{ verticalAlign: "baseline" }}
             >
               <Logo src={massrobo} />
+            </a>
+          </Col>
+          <Col xs={12} md={4} style={centerTable}>
+            <a
+              href="https://www.ibm.com/"
+              style={{ verticalAlign: "baseline" }}
+            >
+              <Logo src={ibm} />
             </a>
           </Col>
         </Row>
