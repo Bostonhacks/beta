@@ -8,18 +8,17 @@ import circleGreen from "./../../assets/Circles/Half_Circle_Green.svg";
 import zigzag from "./../../assets/ZigZags/Line_Green2.svg";
 
 const eventsSat = [
-  { time: "9:30 AM", name: "Registration" },
-  { time: "11:30 AM", name: "Opening Ceremony" },
-  { time: "12:00 PM", name: "Lunch" },
-  { time: "1:00 PM", name: "Team formation" },
-  { time: "1:30 PM", name: "Hacking begins" },
+  { time: "9:00 AM", name: "Check-in" },
+  { time: "11:00 AM", name: "Opening Ceremony" },
+  { time: "12:00 PM", name: "Hacking Starts" },
+  { time: "12:30 PM", name: "Lunch" },
   { time: "6:30 PM", name: "Dinner" },
   { time: "12:00 AM", name: "Midnight snack" }
 ];
 
 const eventsSun = [
-  { time: "7:00 AM", name: "Breakfast" },
-  { time: "11:00 AM", name: "Submissions due" },
+  { time: "8:00 AM", name: "Breakfast" },
+  { time: "10:00 AM", name: "Submissions due" },
   { time: "11:00 AM", name: "Lunch" },
   { time: "12:00 PM", name: "Judging expo" },
   { time: "2:00 PM", name: "Closing ceremony" }
