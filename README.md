@@ -23,6 +23,6 @@ and to start the project,
 
 ## Workflow
 
-Most of the stuff you'll be working on is in the src folder. The 
+Most of the stuff you will be working on is in the src folder. The 
 
 
