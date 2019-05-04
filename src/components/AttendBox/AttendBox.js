@@ -6,6 +6,9 @@ import styled from "styled-components";
 //   box-sizing: border-box;
 // `;
 
+const SubButton = styled.button`
+  background-color: #2fb5e3;
+`;
 const Text = styled.div`
   font-family: "Roboto slab", sans-serif;
   font-weight: 300;
@@ -50,6 +53,9 @@ class AttendBox extends Component {
           Thank you for your interest! Unfortunately registration is closed.
           Keep an eye out for information on next years event!
         </Text>
+        <a href="https://bostonhacks.us18.list-manage.com/subscribe/post?u=f6d6fee90aa63339dffc8ccca&amp;id=8873714a91">
+          <SubButton>Subscribe for Updates!</SubButton>
+        </a>
       </Fragment>
     );
   }
