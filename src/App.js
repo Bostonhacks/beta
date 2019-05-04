@@ -18,7 +18,7 @@ class App extends Component {
       <div>
         <Helmet>
           <link rel="canonical" href="https://bostonhacks.io/" />
-          <meta itemProp="name" content="BostonHacks - November 10th & 11th" />
+          <meta itemProp="name" content="BostonHacks - November 16th & 17th" />
           <meta
             itemProp="description"
             content="BostonHacks is Boston University's premier hackathon hosting 500 students from all over the US and Canada."
@@ -83,7 +83,7 @@ class App extends Component {
             <HeroText
               title="Boston"
               titleBold="Hacks"
-              date="November 10th&ndash;November 11th"
+              date="November 16th&ndash;November 17th"
               location="Boston University"
             />
           </div>
