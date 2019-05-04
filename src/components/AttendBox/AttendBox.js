@@ -50,8 +50,8 @@ class AttendBox extends Component {
       <Fragment>
         <Title>Register</Title>
         <Text>
-          Thank you for your interest! Unfortunately registration is closed.
-          Keep an eye out for information on next years event!
+          Thank you for your interest! Keep an eye out for information on our
+          2019 event!
         </Text>
         <a href="https://bostonhacks.us18.list-manage.com/subscribe/post?u=f6d6fee90aa63339dffc8ccca&amp;id=8873714a91">
           <SubButton>Subscribe for Updates!</SubButton>
