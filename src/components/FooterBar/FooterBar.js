@@ -5,6 +5,8 @@ import { Grid, Row, Col } from "react-flexbox-grid";
 import logoFooter from "../../assets/Logos/Logo-Small_footer.svg";
 import facebook from "../../assets/Logos/fb.svg";
 import twitter from "../../assets/Logos/Twitter.svg";
+import github from "../../assets/Logos/github.png";
+import medium from "../../assets/Logos/medium.png";
 
 const Text = styled.div`
   font-family: "Roboto", sans-serif;
@@ -57,6 +59,18 @@ export class FooterBar extends Component {
               <Col style={Spacer} className="hidden-xs">
                 <a href="https://twitter.com/boston_hacks">
                   <img src={twitter} />
+                </a>
+              </Col>
+
+              <Col style={Spacer} className="hidden-xs">
+                <a href="https://github.com/Bostonhacks">
+                  <img src={github} />
+                </a>
+              </Col>
+
+              <Col style={Spacer} className="hidden-xs">
+                <a href="https://medium.com/bostonhacks">
+                  <img src={medium} />
                 </a>
               </Col>
 
