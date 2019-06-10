@@ -1,11 +1,14 @@
 import React, { Component, Fragment } from "react";
 import styled from "styled-components";
 
-const SubscribeButton = styled.button`
-  background-color: #2fb5e3;
-  box-sizing: border-box;
-`;
+// const SubscribeButton = styled.button`
+//   background-color: #2fb5e3;
+//   box-sizing: border-box;
+// `;
 
+const SubButton = styled.button`
+  background-color: #2fb5e3;
+`;
 const Text = styled.div`
   font-family: "Roboto slab", sans-serif;
   font-weight: 300;
@@ -47,14 +50,11 @@ class AttendBox extends Component {
       <Fragment>
         <Title>Register</Title>
         <Text>
-          Thank you for your interest! Unfortunately registration is closed. If
-          you applied, you can check your application status at the Registration
-          Portal.
+          Thank you for your interest! Keep an eye out for information on our
+          2019 event!
         </Text>
-        <a href="https://my.bostonhacks.io">
-          <SubscribeButton className="button btn btn-outline-danger">
-            Registration Portal
-          </SubscribeButton>
+        <a href="https://bostonhacks.us18.list-manage.com/subscribe/post?u=f6d6fee90aa63339dffc8ccca&amp;id=8873714a91">
+          <SubButton>Subscribe for Updates!</SubButton>
         </a>
       </Fragment>
     );
