@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import styled from "styled-components";
-import sponsor from "./../../documents/BostonHacks_Sponsorship_Fall_2018.pdf";
+import sponsor from "./../../documents/BostonHacks_Sponsorship2019.pdf";
 
 const DocButton = styled.button`
   background-color: #f05352;
