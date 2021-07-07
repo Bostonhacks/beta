@@ -59,7 +59,8 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
     "lint": "eslint --fix src/",
-    "precommit": "yarn lint && git add ."
+    "precommit": "yarn lint && git add .",
+    "prettier": "prettier --write src/**"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
